@@ -1,0 +1,181 @@
+/* NAV BAR STYLE */
+
+@media (max-width: 575.98px) {
+
+  .owl-carousel .item {
+    width: 50%;
+  }
+  .owl-carousel .item h4 {
+    font-size: 15px !important;
+  }
+
+}
+
+
+@media (max-width: 800px) {
+  .imagebanner img{
+    height: 250px !important;
+  }
+  .contact__wrapper {
+    position: relative;
+    top: -50px !important;
+    /* Adjust this value as needed */
+    z-index: 1;
+  
+  
+  
+    /* To ensure the form is on top of the image */
+  }
+  
+
+  .homeTitle{
+    font-size: 20px !important;
+    font-weight: bolder !important;
+    font-style: italic !important;
+  }
+  .text-overlay {
+    top:120px !important; /* Adjust the top position for smaller screens */
+    left: 50% !important; /* Center the element horizontally */
+    transform: translateX(-50%) !important;
+    font-size: 10px !important;
+}
+.text-white{
+  font-size: 10px !important;
+  width: 300px;
+
+}
+  .ftco-navbar-light {
+    background: #faf9f9 !important;
+    position: relative;
+    top: 0;
+    padding: 50x 50px;
+    height: auto;
+  }
+  .logo-image{
+    width: 120px;
+  }
+  .header-icons{
+      padding-left: 50px;
+      padding-top: 20px;
+      
+  
+}
+.search-form{
+  padding: auto;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+
+.ftco-navbar-light .navbar-nav>.nav-item>.nav-link {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  color: rgba(10, 10, 10, 0.7);
+}
+
+.ftco-navbar-light .navbar-nav>.nav-item>.nav-link:hover {
+  color: #020202;
+}
+
+
+
+.SalesProduct{
+    font-size: 10px !important;
+    height: auto !important;
+  }
+
+  .ribbon span, h2{
+    font: 100 10px 'Lato', sans-serif !important;
+  }
+  .Wishlist img{
+    height: 60px !important;
+    width: 60px !important;
+    padding-left: 10px !important;
+
+  }
+  .Wishlist button{
+    height: 50px !important;
+    width: 40px !important;
+    font-size: 10px;
+
+  }
+  .round-black-btn {
+    
+    font-size: 15px;
+    padding-left: 20px!important;
+    padding-right: 20px !important;
+  }
+  .custom-btn {
+    font-size: 12px;
+    padding-left: 2%;
+    padding-right: 0%;
+  
+ 
+  }
+  
+
+}
+
+
+@media (max-width: 500px) {
+   #imageCarousel.carousel{
+    height: 200px;
+  }
+  #imageCarousel img{
+    height: 200px;
+  }
+
+
+
+  .cart-number1{
+    right: -20px;
+
+  }
+  .quickView-btn {
+  
+    transform: translateX(-50%);
+    font-weight: bold;
+    text-decoration: none !important;
+    height: 25px;
+    width: 100% !important;
+    font-size: 10px;
+
+  }
+.checkbox-label    {
+  font-size: 8px !important;
+}
+.checkmark {
+  width: 15px !important;
+  height: 14px !important;
+
+}
+  .single  li a ,h3 {
+        font-size: 8px !important;
+    line-height: 27px !important;
+    height: auto;
+  }
+  .fliter-text {
+    font-size: 15px !important;
+  }
+  .FilterBtn{
+    color: #000000;
+    background-color: white;
+    font-size: 11px;
+    
+    height: 40px !important;
+  }
+  
+  .filtertoggle{
+ font-size: 15px !important;
+ padding: 20px !important;
+  }
+
+  .sticky {
+    position: sticky;
+    top: 0;
+    z-index: 100; /* Optional: Adjust the z-index to control the stacking order */
+  }
+
+}

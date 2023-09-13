@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Icon Modal</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+
+</head>
+  <style>
+    /* Search Form */
+    .search-form input[type="search"].search-field {
+      width: 100%;
+      border: 2px solid var(--grey-color);
+      transition: ease-in;
+      border-radius: 50px;
+      padding: 10px 40px;
+    }
+
+    .search-form input[type="search"].search-field:focus {
+      border: 2px solid var(--dark-color);
+    }
+
+    .search-form button {
+      position: absolute;
+      top: 6px;
+      right: 9px;
+      background: transparent;
+      border: none;
+      box-shadow: none;
+    }
+
+    /* Search Popup */
+    .search-popup {
+      background-color: #fff;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 9999;
+      cursor: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cpath fill='%23000' d='M20 1l-1-1-9 9-9-9-1 1 9 9-9 9 1 1 9-9 9 9 1-1-9-9'/%3E%3C/svg%3E"), pointer;
+
+    }
+
+    .search-popup.is-visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .search-popup-container {
+      background-color: transparent;
+      position: relative;
+      top: 50%;
+      margin: 0 auto;
+      padding: 0;
+      width: 90%;
+      max-width: 800px;
+      text-align: center;
+      box-shadow: none;
+      cursor: default;
+      transform: translateY(-40px);
+      transition-duration: 0.3s;
+    }
+
+
+    .search-popup-form {
+      position: relative;
+      margin: 0 0 3em 0;
+    }
+
+    .search-popup-form .form-control {
+      padding: 0 0 .375em 0;
+      font-size: 2em;
+    }
+
+    .search-popup-form #search-popup-submit {
+      display: none;
+    }
+
+ 
+    .search-popup .search-popup-close:hover {
+      transform: rotate(90deg);
+    }
+
+    .search-popup .search-popup-close i {
+      
+      position: relative;
+      width: 1em;
+      height: 1em;
+    }
+
+
+
+    .search-popup .cat-list-title {
+      margin-top: 40px;
+      margin-bottom: 10px;
+      font-size: 0.6em;
+      font-weight: normal;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .search-popup .cat-list {
+      margin: 0;
+      list-style-type: none;
+    }
+
+    .search-popup .cat-list-item {
+      display: inline-block;
+      margin-bottom: 0;
+      letter-spacing: 0.015em;
+      font-size: 2em;
+    }
+
+    .search-popup .cat-list-item a:hover::after {
+      height: 1px;
+      opacity: 1;
+      transform: translateY(2px);
+    }
+
+  
+
+
+
+    @media only screen and (max-width: 991px) {
+      .search-popup .cat-list-item,
+      .search-popup-form .form-control {
+        font-size: 1.425em;
+      }
+    }
+
+    @media only screen and (max-width: 767px) {
+      .search-popup .search-popup-close {
+        top: 1em;
+        right: 1em;
+      }
+    }
+
+    @media only screen and (max-width: 575px) {
+      .search-popup .cat-list-item,
+      .search-popup-form .form-control {
+        font-size: 1.125em;
+      }
+
+      .search-popup .search-popup-close {
+        top: 1em;
+        right: 1em;
+      }
+    }
+
+    .search-popup input[type="search"] {
+      font-size: 22px;
+      height: 60px;
+      padding: 26px;
+    }
+
+    .search-popup .search-form button {
+      position: absolute;
+      top: 0;
+      right: 8px;
+      margin: 0;
+      padding: 15px;
+    }
+
+    .search-popup .search-form button i {
+      font-size: 29px;
+    }
+  </style>
+<body>
+  <header id="header">
+    <div id="header-wrap">
+      <nav class="secondary-nav border-bottom">
+        <div class="container">
+          <div class="row d-flex align-items-center">
+            <div class="col-md-4 header-contact">
+              <p>Let's talk! <strong>+57 444 11 00 35</strong></p>
+            </div>
+            <div class="col-md-4 shipping-purchase text-center">
+              <p>Free shipping on a purchase value of $200</p>
+            </div>
+            <div class="col-md-4 col-sm-12 user-items">
+              <ul class="d-flex justify-content-end list-unstyled">
+                <li>
+                  <a href="login.html">
+                    <i class="fas fa-user mr-2"></i> <!-- Font Awesome Icon: User with right margin -->
+                  </a>
+                </li>
+                <li>
+                  <a href="cart.html">
+                    <i class="fas fa-shopping-cart mr-2"></i> <!-- Font Awesome Icon: Shopping Cart with right margin -->
+                  </a>
+                </li>
+                <li>
+                  <a href="wishlist.html">
+                    <i class="fas fa-heart mr-2"></i> <!-- Font Awesome Icon: Heart with right margin -->
+                  </a>
+                </li>
+                <li class="user-items search-item">
+                  <a href="#" class="search-button" data-toggle="modal" data-target="#searchModal">
+                    <i class="fas fa-search"></i> <!-- Font Awesome Icon: Search -->
+                  </a>
+                </li>
+              </ul>
+            </div>
+          
+          </div>
+        </div>
+      </nav>
+      <nav class="primary-nav padding-small">
+        <div class="container">
+          <div class="row d-flex align-items-center">
+            <div class="col-lg-2 col-md-2">
+              <div class="main-logo">
+                <a href="index.html">
+                  <img src="images/main-logo.png" alt="logo">
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-10 col-md-10">
+              <div class="navbar">
+                <div id="main-nav" class="stellarnav d-flex justify-content-end right">
+                  <ul class="menu-list">
+                    <li class="menu-item has-sub">
+                      <a href="index.html" class="item-anchor active d-flex align-item-center" data-effect="Home">Home<i
+                          class="icon icon-chevron-down"></i></a>
+                      <ul class="submenu">
+                        <li><a href="index.html" class="item-anchor active">Home</a></li>
+                        <li><a href="home2.html" class="item-anchor">Home v2<span class="text-primary"> (PRO)</span></a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="about.html" class="item-anchor" data-effect="About">About</a></li>
+                    <li class="menu-item has-sub">
+                      <a href="shop.html" class="item-anchor d-flex align-item-center" data-effect="Shop">Shop<i
+                          class="icon icon-chevron-down"></i></a>
+                      <ul class="submenu">
+                        <li><a href="shop.html" class="item-anchor">Shop</a></li>
+                        <li><a href="shop-slider.html" class="item-anchor">Shop slider<span
+                              class="text-primary"> (PRO)</span></a></li>
+                        <li><a href="shop-grid.html" class="item-anchor">Shop grid<span
+                              class="text-primary"> (PRO)</span></a></li>
+                        <li><a href="shop-list.html" class="item-anchor">Shop list<span
+                              class="text-primary"> (PRO)</span></a></li>
+                        <li><a href="single-product.html" class="item-anchor">Single product<span
+                              class="text-primary"> (PRO)</span></a></li>
+                        <li><a href="cart.html" class="item-anchor">Cart<span class="text-primary"> (PRO)</span></a></li>
+                        <li><a href="wishlist.html" class="item-anchor">Wishlist<span
+                              class="text-primary"> (PRO)</span></a></li>
+                        <li><a href="checkout.html" class="item-anchor">Checkout<span
+                              class="text-primary"> (PRO)</span></a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item has-sub">
+                      <a href="#" class="item-anchor d-flex align-item-center" data-effect="Pages">Pages<i
+                          class="icon icon-chevron-down"></i></a>
+                      <ul class="submenu">
+                        <li><a href="coming-soon.html" class="item-anchor">Coming soon<span
+                              class="text-primary"> (PRO)</span></a></li>
+                        <li><a href="login.html" class="item-anchor">Login<span class="text-primary"> (PRO)</span></a>
+                        </li>
+                        <li><a href="faqs.html" class="item-anchor">FAQs<span class="text-primary"> (PRO)</span></a></li>
+                        <li><a href="styles.html" class="item-anchor">Styles</a></li>
+                        <li><a href="thank-you.html" class="item-anchor">Thankyou</a></li>
+                        <li><a href="error.html" class="item-anchor">Error page<span
+                              class="text-primary"> (PRO)</span></a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item has-sub">
+                      <a href="blog.html" class="item-anchor d-flex align-item-center" data-effect="Blog">Blog<i
+                          class="icon icon-chevron-down"></i></a>
+                      <ul class="submenu">
+                        <li><a href="blog.html" class="item-anchor">Blog</a></li>
+                        <li><a href="blog-sidebar.html" class="item-anchor">Blog with sidebar<span
+                              class="text-primary"> (PRO)</span></a></li>
+                        <li><a href="blog-masonry.html" class="item-anchor">Blog masonry<span
+                              class="text-primary"> (PRO)</span></a></li>
+                        <li><a href="single-post.html" class="item-anchor">Single post</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="contact.html" class="item-anchor" data-effect="Contact">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  
+  <!-- Search Modal -->
+  <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="search-popup">
+          <div class="search-popup-container">
+            <form role="search" method="get" class="search-form" action="">
+              <input type="search" id="search-form" class="search-field" placeholder="Type and press enter" value=""
+                name="s" />
+              <button type="submit" class="search-submit">
+                <i class="icon icon-search"></i>
+              </button>
+            </form>
+            <h5 class="cat-list-title">Browse Categories</h5>
+            <ul class="cat-list">
+                               <!-- Category Links -->
+                               <li class="dropdown-item"><a href="#">Sweets</a></li>
+                               <li class="dropdown-item"><a href="#" class="Text-decoration-underline">Cookies</a></li>
+                               <li class="dropdown-item"><a href="#">Chocolates</a></li>
+                               <li class="dropdown-item"><a href="#">Chawanprash</a></li>
+                               <li class="dropdown-item"><a href="#">Chewing Gums</a></li>
+                               <li class="dropdown-submenu">
+                               <li class="dropdown-item"><a href="#">Sweeteners</a></li>
+   
+                               <li class="dropdown-item"><a href="#">Juices &amp; Syrups</a></li>
+                               <li class="dropdown-item"><a href="#">Jams &amp; Spreads</a></li>
+                               <li class="dropdown-item"><a href="#">Diabetic Care Atta</a></li>
+                               <li class="dropdown-item"><a href="#">Vinegar</a></li>
+                               <li class="dropdown-item"><a href="#">Snacks</a></li>
+                               <li class="dropdown-item"><a href="#">Health Drinks &amp; Pre Mix</a></li>
+                               <li class="dropdown-item"><a href="#">Tooth Paste</a></li>
+                               <li class="dropdown-item"><a href="#">Ketchup &amp; Sauces</a></li>            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Your footer HTML code goes here -->
+  <!-- ... (keep your existing footer code here) ... -->
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    // JavaScript code for search popup
+    $(document).ready(function () {
+      var searchPopup = function () {
+        // Open search box
+        $('.search-button').on('click', function (e) {
+          e.preventDefault();
+          $('.search-popup').addClass('is-visible');
+        });
+
+        // Close search box
+        $('.search-popup-close, .modal').on('click', function (e) {
+          e.preventDefault();
+          $('.search-popup').removeClass('is-visible');
+        });
+
+        // Close search box when clicking outside the popup
+        $(".search-popup-container").on("click", function (e) {
+          e.stopPropagation();
+        });
+
+        // Close search box when pressing the Esc key
+        $(document).keyup(function (e) {
+          if (e.which === 27) {
+            $(".search-popup").removeClass("is-visible");
+          }
+        });
+      };
+
+      searchPopup(); // Call the function to enable search popup functionality
+    });
+  </script>
+</body>
+
+</html>

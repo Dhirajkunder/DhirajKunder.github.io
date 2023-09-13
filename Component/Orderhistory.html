@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Icon Modal</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <link rel="stylesheet" href="../assets/Css/style.css" />
+  <link rel="stylesheet" href="../assets/Css/mediaquery.css">
+
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+</head>
+
+<body>
+  <section id="Checkout ">
+    <div class="containers m-md-5">
+      <div class="row ">
+
+        <!-- Checkout -->
+        <div class="col-md-6 p-0">
+          <div class="card p-3" style="            background-color: #fff;
+          border-radius: 10px;            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);      
+          ">
+            <div class="mobile h2 text-center">
+              <img src="https://altcheeni.com/wp-content/uploads/2022/01/Mainlogo2.png" class="logo-image"
+                alt="Altcheeni" />
+            </div>
+
+
+            <div class="breadcrumb " style="background-color: white;">
+              <a href="../index.html" class="breadcrumb-item text-decoration">Home</a>
+
+              <a href="../Component/Cart.html" class="breadcrumb-item text-decoration">Cart</a>
+              <span class="breadcrumb-item active text-decoration">Checkout</span>
+
+            </div>
+            <div class="AddressForm">
+              <form>
+               <div class="card p-3">
+                  <i>
+                    <h5 class="text-center font-weight-bold"> Billing Address</h5>
+                  </i>
+                </div> 
+
+                <div class="row">
+                  <div class="col">
+                    <div class="form-group">
+                      <label class="font-weight-bold" for="email">Email</label>
+                      <div class="input-group">
+                        <span class="input-group-text"><i class="far fa-envelope"></i></span>
+                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-group">
+                      <label class="font-weight-bold" for="Mobile">Contact Number</label>
+                      <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                        <input type="text" class="form-control" id="Mobile" placeholder="888888888" required>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <div class="form-group">
+                      <label class="font-weight-bold" for="firstName">First Name</label>
+                      <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-group">
+                      <label class="font-weight-bold" for="lastName">Last Name</label>
+                      <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="font-weight-bold" for="Address">Address</label>
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="far fa-address-card"></i></span>
+                    <input type="Text" class="form-control" id="Address" placeholder="Address" required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="font-weight-bold" for="Landmark">Landmark</label>
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="far fa-address-card"></i></span>
+                    <input type="Text" class="form-control" id="Landmark" placeholder="Eg: Opp school" required>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label class="font-weight-bold" for="City">City</label>
+                      <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-city"></i></span>
+                        <input type="Text" class="form-control" id="City" placeholder="Eg: Mumbai" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label class="font-weight-bold" for="State">State</label>
+                      <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-city"></i></span>
+                        <select name="State" class="form-control" id="State">
+                          <option value="uk">Maharashtra</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mt-3">
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label class="font-weight-bold" for="Pincode">Pincode</label>
+                      <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-city"></i></span>
+                        <input type="Text" class="form-control" id="Pincode" placeholder="Eg: 400095" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label class="font-weight-bold" for="country">Country</label>
+                      <div class="input-group">
+                        <span class="input-group-text"><i class="fa fa-flag" aria-hidden="true"></i></span>
+                        <select name="country" class="form-control" id="country">
+                          <option value="uk">United Kingdom</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="saveAddress">
+                    <label class="form-check-labels" for="saveAddress">Save this address for future use</label>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="orderNotes">Order Notes</label>
+                  <textarea class="form-control" id="orderNotes" rows="4"
+                    placeholder="Add any additional notes or comments here"></textarea>
+                </div>
+                <div class="add">
+                  <button class="custom-btn w-100 font-weight-bold"> Add Address</button>
+                </div>
+
+
+              </form>
+        
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Checkout -->
+
+
+
+        <div class="col-md-6 order-md-1 order-first ">
+          <div class="card d-md-none">
+            <div class="row">
+              <div class="col-8">
+                <button class="custom-btn dropdown-toggle w-100 " style="border:none" type="button"
+                  data-toggle="collapse" data-target="#productCollapse">
+                  <i class="fas fa-cart-plus "></i>
+                  Show order Summary
+                </button>
+              </div>
+              <div class="col-4 ">
+                <p class="font-weight-bold pt-2 ">Rs 600</p>
+              </div>
+            </div>
+          </div>
+          <div class="collapse d-md-block" id="productCollapse">
+
+            <div class="card p-4" style="            background-color: #fff;
+            border-radius: 10px;            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);      
+            ">
+            <div class="single">
+              <div class="card p-3">
+                <i>
+                  <h5 class="text-center font-weight-bold"> Item List</h5>
+                </i>
+              </div>            
+            </div>
+              <div class="row">
+                <div class="col-2  ">
+                  <span class="cart-number1" style="top: 15px; padding: 0">8</span>
+                  <img class="img-fluid " style="width: 4.0rem;" src="../assets/img/LoginLogo.jpeg">
+                </div>
+                <div class="col-8 mt-3">
+
+                  <a href="#" style="color:rgb(117, 117, 117);text-decoration:none;">
+                    <h6 class="card-title font-weight-bold " style="font-size: 15px;">
+                      Ambriona Keto Chocolate Pack of 3 Sugar Free Dark Chocolate 65% – 72% Cocoa with Almonds
+                      Hazelnut All Natural Lactose Free Sweetened with Stevia Low carb Maltitol Free High
+                      Protein 3 x 50 gm = 150 gm
+                    </h6>
+                  </a>
+
+                </div>
+                <div class=" col- pl-md-3 mt-3 ">
+                  <b>&#8377;</b> 44.00
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-2  ">
+                  <span class="cart-number1" style="top: 15px; padding: 0">8</span>
+                  <img class="img-fluid " style="width: 4.0rem;" src="../assets/img/LoginLogo.jpeg">
+                </div>
+                <div class="col-8 mt-3">
+
+                  <a href="#" style="color:rgb(117, 117, 117);text-decoration:none;">
+                    <h6 class="card-title font-weight-bold " style="font-size: 15px;">
+                      Ambriona Keto Chocolate Pack of 3 Sugar Free Dark Chocolate 65% – 72% Cocoa with Almonds
+                      Hazelnut All Natural Lactose Free Sweetened with Stevia Low carb Maltitol Free High
+                      Protein 3 x 50 gm = 150 gm
+                    </h6>
+                  </a>
+
+                </div>
+                <div class=" col- pl-md-3 mt-3 ">
+                  <b>&#8377;</b> 44.00
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-2  ">
+                  <span class="cart-number1" style="top: 15px; padding: 0">8</span>
+                  <img class="img-fluid " style="width: 4.0rem;" src="../assets/img/LoginLogo.jpeg">
+                </div>
+                <div class="col-8 mt-3">
+
+                  <a href="#" style="color:rgb(117, 117, 117);text-decoration:none;">
+                    <h6 class="card-title font-weight-bold " style="font-size: 15px;">
+                      Ambriona Keto Chocolate Pack of 3 Sugar Free Dark Chocolate 65% – 72% Cocoa with Almonds
+                      Hazelnut All Natural Lactose Free Sweetened with Stevia Low carb Maltitol Free High
+                      Protein 3 x 50 gm = 150 gm
+                    </h6>
+                  </a>
+
+                </div>
+                <div class=" col- pl-md-3 mt-3 ">
+                  <b>&#8377;</b> 44.00
+                </div>
+              </div>
+            </div>
+            <div class="card p-2" style="            background-color: #fff;
+              border-radius: 10px;            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);      
+              ">
+              <h3 class="card text-center p-2">Summary</h2>
+                <div class="d-flex justify-content-between">
+                  <p class="mb-2">Total price:</p>
+                  <p class="mb-2">$195.90</p>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <p class="mb-2">Discount:</p>
+                  <p class="mb-2 text-danger">- $60.00</p>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <p class="mb-2">Shipping cost:</p>
+                  <p class="mb-2">+ $14.00</p>
+                </div>
+                <hr />
+                <div class="d-flex justify-content-between">
+                  <p class="mb-2">Total price:</p>
+                  <p class="mb-2 fw-bold">$149.90</p>
+                </div>
+
+                <div class="input-group mt-3 mb-4">
+                  <input type="text" class="form-control border" name="" placeholder="Promo code" data-toggle="modal"
+                    data-target="#couponModal" />
+                </div>
+                <div class="box-1">
+                  <a href="../Component/Reciept.html" style="color: black;"><button class="font-weight-bold custom-btn w-100">PROCEED</span></button></a>
+                </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal HTML -->
+    <div class="modal fade" id="couponModal" tabindex="-1" role="dialog" aria-labelledby="couponModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header font-weight-bold d-flex justify-content-center"
+            style="background-color: rgb(226, 234, 241);">
+            APPLY COUPON
+          </div>
+          <div class="modal-body">
+            <div class="applyCouponContainer">
+              <div class="formContainer mb-5">
+                <div class="textInputContainer p-3">
+                  <input id="coupon-input-field" class="form-control" placeholder="Enter coupon code"
+                    style="border-radius: 10px;">
+                </div>
+              </div>
+            </div>
+
+            <div class="coupon-box">
+              <div class="radio-icon-div mb-3">
+                <div class="radio-icon">
+                  <input type="radio" name="radio" checked="checked">
+                  <label class="radio-style" for="radio"></label>
+                </div>
+                <div class="radio-label-text">
+                  <div class="row">
+                    <h3 class="custom-title"><span>OFFER20</span> </h3>
+                    <h5 class="custom-desc">
+                      <ul>
+                        <li class="coupon-description">20% off on selected items</li>
+                        <li class="coupons-description">Valid till 25 December 2016</li>
+                      </ul>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="radio-icon-div">
+                <div class="radio-icon">
+                  <input type="radio" name="radio">
+                  <label class="radio-style" for="radio"></label>
+                </div>
+                <div class="radio-label-text">
+                  <div class="row">
+                    <h3 class="custom-title"><span>OFFER10</span> </h3>
+                    <h5 class="custom-desc">
+                      <ul>
+                        <li class="coupon-description">10% off on selected items</li>
+                        <li class="coupons-description">Valid till 29 December 2016</li>
+                      </ul>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="APPLYBTN">
+              <button class="custom-btn w-100"
+                style="border-top: none;border-bottom: none; outline: none;">APPLY</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <section id="Shopping">
+      <div class="container  " style="          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);      
+      ">
+        <div class="single col-12 p-3" style="border: none;" >
+  
+          <h4 class="fliter-text p-3  font-weight-bold"><i>Items In your Wishlist </i></h4>
+        </div>
+  
+        <div class="row p-3">
+          <div class="col-md-2 col-4   ">
+            <div class="productCard  ">
+              <div class="productCard-pic hov-img0">
+                <img src="../assets/img/LoginLogo.jpeg" class="" alt="IMG-PRODUCT" />
+  
+                <a href="#" class="quickView-btn p-1 w-75 text-center" data-toggle="modal" data-target="#QuickView"
+                  href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Quick View
+                </a>
+              </div>
+  
+              <div class="Text ">
+                <div class="Description mt-3">
+                  <a href="#" style="color:rgb(39, 39, 39);text-decoration:none;">
+                    <h6 class="card-title font-weight-bold text-wrap-ellipsis">
+                      Ambriona Keto Chocolate Pack of 3 Sugar Free Dark Chocolate 65% – 72% Cocoa with Almonds
+                      Hazelnut All Natural Lactose Free Sweetened with Stevia Low carb Maltitol Free High
+                      Protein 3 x 50 gm = 150 gm
+                    </h6>
+                  </a>
+  
+                  <div class="wishlist ">
+                    <h6 class="font-weight-bold"> &#8377;120.00</strong>
+                      <a href="#" class="">
+                        <i class="far fa-heart float-right " style="color: #000000;"></i></a>
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-2 col-4   ">
+            <div class="productCard  ">
+              <div class="productCard-pic hov-img0">
+                <img src="../assets/img/LoginLogo.jpeg" class="" alt="IMG-PRODUCT" />
+  
+                <a href="#" class="quickView-btn p-1 w-75 text-center" data-toggle="modal" data-target="#QuickView"
+                  href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Quick View
+                </a>
+              </div>
+  
+              <div class="Text ">
+                <div class="Description mt-3">
+                  <a href="#" style="color:rgb(39, 39, 39);text-decoration:none;">
+                    <h6 class="card-title font-weight-bold text-wrap-ellipsis">
+                      Ambriona Keto Chocolate Pack of 3 Sugar Free Dark Chocolate 65% – 72% Cocoa with Almonds
+                      Hazelnut All Natural Lactose Free Sweetened with Stevia Low carb Maltitol Free High
+                      Protein 3 x 50 gm = 150 gm
+                    </h6>
+                  </a>
+  
+                  <div class="wishlist ">
+                    <h6 class="font-weight-bold"> &#8377;120.00</strong>
+                      <a href="#" class="">
+                        <i class="far fa-heart float-right " style="color: #000000;"></i></a>
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-2 col-4   ">
+            <div class="productCard  ">
+              <div class="productCard-pic hov-img0">
+                <img src="../assets/img/LoginLogo.jpeg" class="" alt="IMG-PRODUCT" />
+  
+                <a href="#" class="quickView-btn p-1 w-75 text-center" data-toggle="modal" data-target="#QuickView"
+                  href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Quick View
+                </a>
+              </div>
+  
+              <div class="Text ">
+                <div class="Description mt-3">
+                  <a href="#" style="color:rgb(39, 39, 39);text-decoration:none;">
+                    <h6 class="card-title font-weight-bold text-wrap-ellipsis">
+                      Ambriona Keto Chocolate Pack of 3 Sugar Free Dark Chocolate 65% – 72% Cocoa with Almonds
+                      Hazelnut All Natural Lactose Free Sweetened with Stevia Low carb Maltitol Free High
+                      Protein 3 x 50 gm = 150 gm
+                    </h6>
+                  </a>
+  
+                  <div class="wishlist ">
+                    <h6 class="font-weight-bold"> &#8377;120.00</strong>
+                      <a href="#" class="">
+                        <i class="far fa-heart float-right " style="color: #000000;"></i></a>
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-2 col-4   ">
+            <div class="productCard  ">
+              <div class="productCard-pic hov-img0">
+                <img src="../assets/img/LoginLogo.jpeg" class="" alt="IMG-PRODUCT" />
+  
+                <a href="#" class="quickView-btn p-1 w-75 text-center" data-toggle="modal" data-target="#QuickView"
+                  href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Quick View
+                </a>
+              </div>
+  
+              <div class="Text ">
+                <div class="Description mt-3">
+                  <a href="#" style="color:rgb(39, 39, 39);text-decoration:none;">
+                    <h6 class="card-title font-weight-bold text-wrap-ellipsis">
+                      Ambriona Keto Chocolate Pack of 3 Sugar Free Dark Chocolate 65% – 72% Cocoa with Almonds
+                      Hazelnut All Natural Lactose Free Sweetened with Stevia Low carb Maltitol Free High
+                      Protein 3 x 50 gm = 150 gm
+                    </h6>
+                  </a>
+  
+                  <div class="wishlist ">
+                    <h6 class="font-weight-bold"> &#8377;120.00</strong>
+                      <a href="#" class="">
+                        <i class="far fa-heart float-right " style="color: #000000;"></i></a>
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-2 col-4   ">
+            <div class="productCard  ">
+              <div class="productCard-pic hov-img0">
+                <img src="../assets/img/LoginLogo.jpeg" class="" alt="IMG-PRODUCT" />
+  
+                <a href="#" class="quickView-btn p-1 w-75 text-center" data-toggle="modal" data-target="#QuickView"
+                  href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Quick View
+                </a>
+              </div>
+  
+              <div class="Text ">
+                <div class="Description mt-3">
+                  <a href="#" style="color:rgb(39, 39, 39);text-decoration:none;">
+                    <h6 class="card-title font-weight-bold text-wrap-ellipsis">
+                      Ambriona Keto Chocolate Pack of 3 Sugar Free Dark Chocolate 65% – 72% Cocoa with Almonds
+                      Hazelnut All Natural Lactose Free Sweetened with Stevia Low carb Maltitol Free High
+                      Protein 3 x 50 gm = 150 gm
+                    </h6>
+                  </a>
+  
+                  <div class="wishlist ">
+                    <h6 class="font-weight-bold"> &#8377;120.00</strong>
+                      <a href="#" class="">
+                        <i class="far fa-heart float-right " style="color: #000000;"></i></a>
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-2 col-4   ">
+            <div class="productCard  ">
+              <div class="productCard-pic hov-img0">
+                <img src="../assets/img/LoginLogo.jpeg" class="" alt="IMG-PRODUCT" />
+  
+                <a href="#" class="quickView-btn p-1 w-75 text-center" data-toggle="modal" data-target="#QuickView"
+                  href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Quick View
+                </a>
+              </div>
+  
+              <div class="Text ">
+                <div class="Description mt-3">
+                  <a href="#" style="color:rgb(39, 39, 39);text-decoration:none;">
+                    <h6 class="card-title font-weight-bold text-wrap-ellipsis">
+                      Ambriona Keto Chocolate Pack of 3 Sugar Free Dark Chocolate 65% – 72% Cocoa with Almonds
+                      Hazelnut All Natural Lactose Free Sweetened with Stevia Low carb Maltitol Free High
+                      Protein 3 x 50 gm = 150 gm
+                    </h6>
+                  </a>
+  
+                  <div class="wishlist ">
+                    <h6 class="font-weight-bold"> &#8377;120.00</strong>
+                      <a href="#" class="">
+                        <i class="far fa-heart float-right " style="color: #000000;"></i></a>
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-2 col-4   ">
+            <div class="productCard  ">
+              <div class="productCard-pic hov-img0">
+                <img src="../assets/img/LoginLogo.jpeg" class="" alt="IMG-PRODUCT" />
+  
+                <a href="#" class="quickView-btn p-1 w-75 text-center" data-toggle="modal" data-target="#QuickView"
+                  href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Quick View
+                </a>
+              </div>
+  
+              <div class="Text ">
+                <div class="Description mt-3">
+                  <a href="#" style="color:rgb(39, 39, 39);text-decoration:none;">
+                    <h6 class="card-title font-weight-bold text-wrap-ellipsis">
+                      Ambriona Keto Chocolate Pack of 3 Sugar Free Dark Chocolate 65% – 72% Cocoa with Almonds
+                      Hazelnut All Natural Lactose Free Sweetened with Stevia Low carb Maltitol Free High
+                      Protein 3 x 50 gm = 150 gm
+                    </h6>
+                  </a>
+  
+                  <div class="wishlist ">
+                    <h6 class="font-weight-bold"> &#8377;120.00</strong>
+                      <a href="#" class="">
+                        <i class="far fa-heart float-right " style="color: #000000;"></i></a>
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-2 col-4   ">
+            <div class="productCard  ">
+              <div class="productCard-pic hov-img0">
+                <img src="../assets/img/LoginLogo.jpeg" class="" alt="IMG-PRODUCT" />
+  
+                <a href="#" class="quickView-btn p-1 w-75 text-center" data-toggle="modal" data-target="#QuickView"
+                  href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Quick View
+                </a>
+              </div>
+  
+              <div class="Text ">
+                <div class="Description mt-3">
+                  <a href="#" style="color:rgb(39, 39, 39);text-decoration:none;">
+                    <h6 class="card-title font-weight-bold text-wrap-ellipsis">
+                      Ambriona Keto Chocolate Pack of 3 Sugar Free Dark Chocolate 65% – 72% Cocoa with Almonds
+                      Hazelnut All Natural Lactose Free Sweetened with Stevia Low carb Maltitol Free High
+                      Protein 3 x 50 gm = 150 gm
+                    </h6>
+                  </a>
+  
+                  <div class="wishlist ">
+                    <h6 class="font-weight-bold"> &#8377;120.00</strong>
+                      <a href="#" class="">
+                        <i class="far fa-heart float-right " style="color: #000000;"></i></a>
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+  
+  
+  
+        </div>
+      </div>
+      
+      <div class="modal fade" id="QuickView" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+  
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+  
+            <div class="modal-header p-0 ">
+              <button type="button" class="custom-close-btn" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+  
+            <div class="modal-body">
+              <a href="ProductDetails.html" title="View More"> <button class="btnmodal  float-right mb-5"
+                  style="background: white; padding: 0;border: none;outline: none;"><img src="../assets/img/ViewMore.png"
+                    style="width: 25px;background: white;" alt=""></button>
+                <hr>
+              </a>
+  
+              <div class="container">
+  
+                <div class="row">
+  
+                  <div class="col-md-6 " >
+                    <div class="product-imgs" >
+                    
+                      <div class="img-display" style="      background-color: #fff;
+                      border-radius: 10px;            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);      
+                      ">
+                        <div class="img-showcase ">
+                          <img src="../assets/img/4.png" alt="">
+                          <img src="../assets/img/30.png" alt="">
+                          <img src="../assets/img/1.png" alt="">
+                          <img src="../assets/img/2.png" alt="">
+  
+                        </div>
+                      </div>
+                      <div class="img-select" style="      background-color: #fff;
+                      border-radius: 10px;            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);      
+                      ">
+                        <div class="img-item">
+                          <a href="#" data-id="1">
+                            <img src="../assets/img/4.png" alt="">
+                          </a>
+                        </div>
+                        <div class="img-item">
+                          <a href="#" data-id="2">
+                            <img src="../assets/img/30.png" alt="">
+                          </a>
+                        </div>
+                        <div class="img-item">
+                          <a href="#" data-id="3">
+                            <img src="../assets/img/1.png" alt="">
+                          </a>
+                        </div>
+                        <div class="img-item">
+                          <a href="#" data-id="4">
+                            <img src="../assets/img/2.png" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+  
+  
+                  </div>
+                  <div class="col-md-6 ">
+                    <div class="product-dtl">
+                      <div class="product-info">
+                        <div class="product-name">
+                          <a href="#" style="color:rgb(39, 39, 39);text-decoration:none;">
+                            <h6 class="card-title font-weight-bold text-wrap-ellipsis">
+                              Ambriona Keto Chocolate Pack of 3 Sugar Free Dark Chocolate 65% – 72% Cocoa with Almonds
+                              Hazelnut All Natural Lactose Free Sweetened with Stevia Low carb Maltitol Free High
+                              Protein 3 x 50 gm = 150 gm
+                            </h6>
+                          </a>
+          
+                        </div>
+                        <div class="reviews-counter">
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" checked />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" checked />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" checked />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+                          <span>3 Reviews</span>
+                        </div>
+                        <div class="product-price-discount"><span>Rs 39.00</span><span class="line-through">Rs 29.00</span>
+                        </div>
+                      </div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat.</p>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <label for="size">Gram</label>
+                          <select id="size" name="size" class="form-control">
+                            <option>100gm</option>
+                            <option>200gm</option>
+                            <option>500gm</option>
+                            <option>1000kg</option>
+                          </select>
+                        </div>
+                        <div class="col-6">
+                          <div class="product-count  ">
+                            <label for="size">Quantity</label>
+                            <form action="#" class="display-flex w-100">
+                              <div class="qtyminus">-</div>
+                              <input type="text" name="quantity" value="1" class="qty">
+                              <div class="qtyplus">+</div>
+                            </form>
+    
+                          </div>
+                        
+                        </div>
+                        <div class="col-6">
+                          <button class="round-black-btn" style="font-size: 11px;height: 50px;">Add to Cart</button>
+  
+                        </div>
+                        <div id="social_media" class="col-12 d-flex justify-content-center mt-4">
+  
+                          <a href="#"><i class="fab fa-facebook p-3" style="color: #575656;"></i></a>
+                          <a href="#"><i class="fab fa-twitter p-3" style="color: #575656;"></i></a>
+                          <a href="#"><i class="fab fa-instagram p-3 "style="color: #575656;"></i></a>
+                          <a href="#"><i class="fab fa-pinterest p-3" style="color: #575656;"></i></a>
+                        </div>
+                
+                      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    </div>
+  </section>
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="../assets/js/Script.js"></script>
+  
+</body>
+
+
+</html>

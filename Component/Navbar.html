@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Icon Modal</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../assets/Css/style.css">
+    <link rel="stylesheet" href="../assets/Css/mediaquery.css">
+
+  </head>
+
+
+  <body>
+    
+    <p class="header-notice">Free shipping on all orders above ₹ 599/-</p>
+    <section class="ftco-section">
+      <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light" id="ftco-navbar">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="d-flex justify-content-center"> <!-- Added a new div for logo and search and toggle -->
+            <div class="col-md-4 text-center">
+              <a class="navbar-brand" href="index.html">
+                <img src="https://altcheeni.com/wp-content/uploads/2022/01/Mainlogo2.png" class="logo-image mt-3" alt="Altcheeni" />
+              </a>
+            </div>
+          </div>
+          <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item active">
+                <a href="#" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                  <a class="dropdown-item level-0" href="#">Category List</a>
+                  <a class="dropdown-item level-0" href="#">Ketchup &amp; Sauces</a>
+                  <a class="dropdown-item level-0" href="#">Sweets</a>
+                  <a class="dropdown-item level-0" href="#">Cookies</a>
+                  <a class="dropdown-item level-0" href="#">Chocolates</a>
+                  <a class="dropdown-item level-0" href="#">Chawanprash</a>
+                  <a class="dropdown-item level-0" href="#">Chewing Gums</a>
+                  <a class="dropdown-item level-0" href="#">Sweeteners</a>
+                  <a class="dropdown-item level-1" href="#">&nbsp;&nbsp;&nbsp;Cane sugar</a>
+                  <a class="dropdown-item level-1" href="#">&nbsp;&nbsp;&nbsp;Drop</a>
+                  <a class="dropdown-item level-1" href="#">&nbsp;&nbsp;&nbsp;Pellets</a>
+                  <a class="dropdown-item level-1" href="#">&nbsp;&nbsp;&nbsp;Powder</a>
+                  <a class="dropdown-item level-1" href="#">&nbsp;&nbsp;&nbsp;Sachet</a>
+                  <a class="dropdown-item level-1" href="#">&nbsp;&nbsp;&nbsp;Stevia Leave Powder</a>
+                  <a class="dropdown-item level-0" href="#">Juices &amp; Syrups</a>
+                  <a class="dropdown-item level-0" href="#">Jams &amp; Spreads</a>
+                  <a class="dropdown-item level-0" href="#">Diabetic Care Atta</a>
+                  <a class="dropdown-item level-0" href="#">Vinegar</a>
+                  <a class="dropdown-item level-0" href="#">Snacks</a>
+                  <a class="dropdown-item level-0" href="#">Best Selling</a>
+                  <a class="dropdown-item level-0" href="#">Health Drinks &amp; Pre Mix</a>
+                  <a class="dropdown-item level-0" href="#">Tooth Paste</a>
+                  <a class="dropdown-item level-0" href="#">Tea &amp; Coffee</a>
+                  <a class="dropdown-item level-0" href="#">Nuts &amp; Seeds</a>
+                  <!-- Add other category options here -->
+                </div>
+              </li>
+              
+              <li class="nav-item"><a href="About.html" class="nav-link">About Us</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Shop</a></li>
+              <li class="nav-item"><a href="Contact.html" class="nav-link">Contact</a></li>
+            </ul>
+          </div>
+          <ul class="d-flex justify-content-end list-unstyled">
+            <li>
+              <a href="#" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <i class="fas fa-user ml-5  " style="color: #e3e4e8;font-size: 25px;"></i> <!-- Font Awesome Icon: User -->
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-heart ml-5 " style="color: #e3e4e8;font-size: 25px;"></i> <!-- Font Awesome Icon: Heart -->
+              </a>
+            </li>
+            <li class="user-items search-item" id="homesearchbtn">
+              <a href="#" class="search-button " data-toggle="modal" data-target="#searchModal">
+                <i class="fas fa-search ml-5  " style="color: #e3e4e8; font-size: 25px;"></i> <!-- Font Awesome Icon: Search -->
+              </a>
+            </li>
+            <li>
+              
+              <span class="cart-number">8</span>
+              <a href="#">
+
+                <i class="fas fa-shopping-cart mr-5" style="color: #e3e4e8; font-size: 25px;"></i> <!-- Font Awesome Icon: Shopping Cart with right margin -->
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg mt-5 mb-md-0 " role="document">
+        <div class="modal-content">
+          <div class="modal-header p-0 ">
+            <button type="button" class="custom-close-btn" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body p-0 ">
+            <div class="row no-gutters">
+              <div class="col-md-6 d-flex align-items-center justify-content-center"
+                style="background-image: url(https://altcheeni.com/wp-content/uploads/2022/01/altcheeni-photo.png); background-size: cover;">
+                <!-- You can set the background image size to cover or contain based on your preference -->
+                <!-- Add your image styling here -->
+              </div>
+  
+              <div class="col-md-6 mt-5 bg-light">
+                <ul class="nav nav-tabs nav-fill mx-4 ">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#login">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#register">Sign Up</a>
+                  </li>
+                </ul>
+                <div class="tab-content mt-4">
+                  <div class="tab-pane fade show active" id="login" role="tabpanel ">
+                    <form>
+                      <!-- Login Form -->
+                      <div class="form-group ">
+                        <div class="input-group ml-3">
+                          <span class="input-group-text"><i class="far fa-user"></i></span>
+                          <input type="text" class="form-control " id="usernameEmail" placeholder="Username / Email"
+                            required>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="input-group ml-3">
+                          <span class="input-group-text"><i class="fas fa-key"></i></span>
+                          <input type="password" class="form-control" id="password" placeholder="Password" required>
+                        </div>
+                      </div>
+                      <div class="form-group form-check ml-3">
+                        <input type="checkbox" class="form-check-input  " id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">Remember me</label>
+                        <a href="#" class="text-secondary float-right ">Forgot Password?</a>
+                      </div>
+                      <button type="submit" class="bg-black w-100 mt-4">Sign In</button>
+                    </form>
+                  </div>
+                  <div class="tab-pane fade ml-2" id="register" role="tabpanel">
+                    <form>
+                      <!-- Registration Form -->
+                      <div class="form-group ">
+                        <div class="input-group">
+                          <span class="input-group-text"><i class="far fa-envelope"></i></span>
+                          <input type="email" class="form-control" id="email" placeholder="Email" required>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <div class="form-group">
+                            <div class="input-group">
+                              <span class="input-group-text"><i class="fas fa-user"></i></span>
+                              <input type="text" class="form-control" id="firstName" placeholder="First Name"
+                                required>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="form-group">
+                            <div class="input-group">
+                              <span class="input-group-text"><i class="fas fa-user"></i></span>
+                              <input type="text" class="form-control" id="lastName" placeholder="Last Name"
+                                required>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                          <input type="password" class="form-control" id="regPassword" placeholder="Password"
+                            required>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                          <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password"
+                            required>
+                        </div>
+                      </div>
+                      <div class="form-check ml-3 p-2">
+                        <input type="checkbox" class="form-check-input " id="subscribeNewsletter">
+                        <label class="form-check-label " for="subscribeNewsletter">Subscribe to our newsletter</label>
+                      </div>
+                      <div class="form-check ml-3 p-2">
+                        <input type="checkbox" class="form-check-input" id="acceptTerms">
+                        <label class="form-check-label" for="acceptTerms">
+                          I accept the <a href="https://altcheeni.com/privacy-policy/" target="_blank">Terms of Service and
+                            Privacy Policy</a>
+                        </label>
+                      </div>
+                      <button type="submit" class=" bg-black w-100 mt-4">Sign Up</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="search-popup">
+            <div class="search-popup-container">
+              <form role="search" method="get" class="search-form" action="">
+                <input type="search" id="search-form" class="search-field" placeholder="Type and press enter" value=""
+                  name="s" />
+
+              </form>
+              <h2 class="cat-list-title">Browse Categories</h2>
+              <ul class="cat-list  ">
+                <li class="cat-list-item"><a href="#">Sweets</a></li>
+                <li class="cat-list-item"><a href="#">Cookies</a></li>
+                <li class="cat-list-item"><a href="#">Chocolates</a></li>
+                <li class="cat-list-item"><a href="#">Chawanprash</a></li>
+                <li class="cat-list-item"><a href="#">Chewing Gums</a></li>
+                <li class="dropdown-submenu">
+                <li class="cat-list-item"><a href="#">Sweeteners</a></li>
+
+                <li class="cat-list-item"><a href="#">Juices &amp; Syrups</a></li>
+                <li class="cat-list-item"><a href="#">Jams &amp; Spreads</a></li>
+                <li class="cat-list-item"><a href="#">Diabetic Care Atta</a></li>
+                <li class="cat-list-item"><a href="#">Vinegar</a></li>
+                <li class="cat-list-item"><a href="#">Snacks</a></li>
+                <li class="cat-list-item"><a href="#">Health Drinks &amp; Pre Mix</a></li>
+                <li class="cat-list-item"><a href="#">Tooth Paste</a></li>
+                <li class="cat-list-item"><a href="#">Ketchup &amp; Sauces</a></li>              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+    </section>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

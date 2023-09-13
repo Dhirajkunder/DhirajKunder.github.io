@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login and Registration Form</title>
+  <!-- Add Bootstrap CSS link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Add Font Awesome CSS link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <link rel="stylesheet" href="E:\NM_COLLEGE\Internship\Altcheeni_UI\assets\Css\style.css">
+  <link rel="stylesheet" href="E:\NM_COLLEGE\Internship\Altcheeni_UI\assets\Css\mediaquery.css">
+  
+
+</head>
+
+<body>
+  <!-- Button to launch the modal -->
+  <section class="ftco-section">
+    <div class="container">
+      <div class="row justify-content-center js-fullheight">
+        <div class="col-md-6 text-center d-flex align-items-center">
+          <div class="wrap w-100">
+            <h2 class="mb-2">Modal 04</h2>
+            <button type="button" class="btn btn-primary py-3 px-4" data-toggle="modal" data-target="#exampleModalCenter">
+              Launch Modal 04
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg mt-5 mb-md-0 " role="document">
+      <div class="modal-content">
+        <div class="modal-header p-0 ">
+          <button type="button" class="custom-close-btn" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body p-0 ">
+          <div class="row no-gutters">
+            <div class="col-md-6 d-flex align-items-center justify-content-center"
+              style="background-image: url(https://altcheeni.com/wp-content/uploads/2022/01/altcheeni-photo.png); background-size: cover;">
+              <!-- You can set the background image size to cover or contain based on your preference -->
+              <!-- Add your image styling here -->
+            </div>
+
+            <div class="col-md-6 mt-5 bg-light">
+              <ul class="nav nav-tabs nav-fill mx-4 ">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#login">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#register">Sign Up</a>
+                </li>
+              </ul>
+              <div class="tab-content mt-4">
+                <div class="tab-pane fade show active" id="login" role="tabpanel ">
+                  <form>
+                    <!-- Login Form -->
+                    <div class="form-group ">
+                      <div class="input-group ml-3">
+                        <span class="input-group-text"><i class="far fa-user"></i></span>
+                        <input type="text" class="form-control " id="usernameEmail" placeholder="Username / Email"
+                          required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="input-group ml-3">
+                        <span class="input-group-text"><i class="fas fa-key"></i></span>
+                        <input type="password" class="form-control" id="password" placeholder="Password" required>
+                      </div>
+                    </div>
+                    <div class="form-group form-check ml-3">
+                      <input type="checkbox" class="form-check-input " id="rememberMe">
+                      <label class="form-check-label" for="rememberMe">Remember me</label>
+                      <a href="#" class="text-secondary float-right ">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary bg-black w-100 mt-4">Sign In</button>
+                  </form>
+                </div>
+                <div class="tab-pane fade ml-2" id="register" role="tabpanel">
+                  <form>
+                    <!-- Registration Form -->
+                    <div class="form-group ">
+                      <div class="input-group">
+                        <span class="input-group-text"><i class="far fa-envelope"></i></span>
+                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <div class="form-group">
+                          <div class="input-group">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            <input type="text" class="form-control" id="firstName" placeholder="First Name"
+                              required>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-group">
+                          <div class="input-group">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            <input type="text" class="form-control" id="lastName" placeholder="Last Name"
+                              required>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                        <input type="password" class="form-control" id="regPassword" placeholder="Password"
+                          required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                        <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password"
+                          required>
+                      </div>
+                    </div>
+                    <div class="form-check ml-3 p-2">
+                      <input type="checkbox" class="form-check-input " id="subscribeNewsletter">
+                      <label class="form-check-label " for="subscribeNewsletter">Subscribe to our newsletter</label>
+                    </div>
+                    <div class="form-check ml-3 p-2">
+                      <input type="checkbox" class="form-check-input" id="acceptTerms">
+                      <label class="form-check-label" for="acceptTerms">
+                        I accept the <a href="https://altcheeni.com/privacy-policy/" target="_blank">Terms of Service and
+                          Privacy Policy</a>
+                      </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary bg-black w-100 mt-4">Sign Up</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add jQuery and Bootstrap JS scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

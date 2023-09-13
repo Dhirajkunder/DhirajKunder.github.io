@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Product</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <link rel="stylesheet" href="../assets/Css/style.css" />
+  <link rel="stylesheet" href="../assets/Css/mediaquery.css" />
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../assets/Css/style.css" />
+
+</head>
+
+<body>
+
+  <section class="ftco-section  sticky-nav mb-3">
+    <div class="header-notice pt-3 ">
+      <div class="container">
+
+      <div class="row ">
+        <div class="col-md-6">
+          <p class="">Free shipping on all orders above ₹ 599/-</p>
+        </div>
+        <div class="col-md-6 float-right ">
+          <div class="row d-flex justify-content-center">
+          <div class="col-2">
+          <a href="" class="mr-4" data-toggle="modal" data-target="#exampleModalCenter" href="#" id="dropdown04"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="far fa-user" style="color:  #3f3e3e;"></i>
+          </a>
+        </div>
+        <div class="col-2">
+
+          <a href="../Component/Wishlist.html" class=" ">
+            <i class="far fa-heart" style="color: #3f3e3e;"></i>
+          </a>
+          </div>
+          <div class="col-3">
+
+          <span class="cart-number">8</span>
+          <a href="../Component/Cart.html" class="">
+
+            <i class="	fas fa-shopping-cart" style="color: #9c9c9c;"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="Header " style="box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);">
+      <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light  " id="ftco-navbar">
+
+        <div class="container-fluid">
+          <div class=""> <!-- Added a new div for logo and search and toggle -->
+            <div class="col-md-4 text-center">
+              <a class="navbar-brand" href="../index.html">
+                <img src="https://altcheeni.com/wp-content/uploads/2022/01/Mainlogo2.png" class="logo-image mt-4"
+                  alt="Altcheeni" />
+              </a>
+            </div>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+          aria-controls="ftco-nav" aria-expanded="true" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+          <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item active">
+                <a href="#" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="modal" data-target="#searchModal" href="#"
+                  id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                  style="color: rgba(10, 10, 10, 0.7);">Category</a>
+
+
+
+              </li>
+
+              <li class="nav-item"><a href="../Component/About.html" class="nav-link">About Us</a></li>
+              <li class="nav-item"><a href="../Component/Shop.html" class="nav-link">Shop</a></li>
+              <li class="nav-item"><a href="../Component/Contact.html" class="nav-link">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Search Div -->
+          <form role="search" method="get" class="search-form mt-3" action="">
+            <div class="form-group has-search">
+              <span class="fa fa-search form-control-feedback"></span>
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+          </form>
+
+
+
+        </div>
+
+      </nav>
+    </div>
+
+
+
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg mt-5 mb-md-0 " role="document">
+        <div class="modal-content">
+          <div class="modal-header p-0 ">
+            <button type="button" class="custom-close-btn" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body p-0 ">
+            <div class="row no-gutters">
+              <div class="col-md-6 d-flex align-items-center justify-content-center"
+                style="background-image: url(https://altcheeni.com/wp-content/uploads/2022/01/altcheeni-photo.png); background-size: cover;">
+                <!-- You can set the background image size to cover or contain based on your preference -->
+                <!-- Add your image styling here -->
+              </div>
+
+              <div class="col-md-6 mt-5 bg-light">
+                <ul class="nav nav-tabs nav-fill mx-4 ">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#login">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#register">Sign Up</a>
+                  </li>
+                </ul>
+                <div class="tab-content mt-4">
+                  <div class="tab-pane fade show active" id="login" role="tabpanel ">
+                    <form>
+                      <!-- Login Form -->
+                      <div class="form-group ">
+                        <div class="input-group ml-3">
+                          <span class="input-group-text"><i class="far fa-user"></i></span>
+                          <input type="text" class="form-control " id="usernameEmail" placeholder="Username / Email"
+                            required>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="input-group ml-3">
+                          <span class="input-group-text"><i class="fas fa-key"></i></span>
+                          <input type="password" class="form-control" id="password" placeholder="Password" required>
+                        </div>
+                      </div>
+                      <div class="form-group form-check ml-3">
+                        <input type="checkbox" class="form-check-input  " id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">Remember me</label>
+                        <a href="#" class="text-secondary float-right ">Forgot Password?</a>
+                      </div>
+                      <button type="submit" class="bg-black w-100 mt-4">Sign In</button>
+                    </form>
+                  </div>
+                  <div class="tab-pane fade ml-2" id="register" role="tabpanel">
+                    <form>
+                      <!-- Registration Form -->
+                      <div class="form-group ">
+                        <div class="input-group">
+                          <span class="input-group-text"><i class="far fa-envelope"></i></span>
+                          <input type="email" class="form-control" id="email" placeholder="Email" required>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <div class="form-group">
+                            <div class="input-group">
+                              <span class="input-group-text"><i class="fas fa-user"></i></span>
+                              <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="form-group">
+                            <div class="input-group">
+                              <span class="input-group-text"><i class="fas fa-user"></i></span>
+                              <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                          <input type="password" class="form-control" id="regPassword" placeholder="Password" required>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                          <input type="password" class="form-control" id="confirmPassword"
+                            placeholder="Confirm Password" required>
+                        </div>
+                      </div>
+                      <div class="form-check ml-3 p-2">
+                        <input type="checkbox" class="form-check-input " id="subscribeNewsletter">
+                        <label class="form-check-label " for="subscribeNewsletter">Subscribe to our newsletter</label>
+                      </div>
+                      <div class="form-check ml-3 p-2">
+                        <input type="checkbox" class="form-check-input" id="acceptTerms">
+                        <label class="form-check-label" for="acceptTerms">
+                          I accept the <a href="https://altcheeni.com/privacy-policy/" target="_blank">Terms of Service
+                            and
+                            Privacy Policy</a>
+                        </label>
+                      </div>
+                      <button type="submit" class=" bg-black w-100 mt-4">Sign Up</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered " role="document">
+        <div class="modal-content">
+          <div class="containers p-3" style="background-color: white;">
+            <div class="card">
+              <h3 class="text-center p-3 font-weight-bold"><i>Browse Categories</i></h3>
+            </div>
+            
+            <div class="row p-3">
+              <div class="col-md-2 col-4 p-0 m-0">
+                <button class="FilterBtn active w-100" data-filter="*">All Products</button>
+              </div>
+              <div class="col-md-2 col-4 p-0 m-0">
+                <button class="FilterBtn w-100" data-filter=".ketchup">Ketchup & Sauces</button>
+              </div>
+              <div class="col-md-2 col-4 p-0 m-0">
+                <button class="FilterBtn w-100" data-filter=".sweets">Sweets</button>
+              </div>
+              <div class="col-md-2 col-4 p-0 p-0 m-0">
+                <button class="FilterBtn w-100" data-filter=".cookies">Cookies</button>
+              </div>
+              <div class="col-md-2 col-4 p-0 m-0">
+                <button class="FilterBtn w-100" data-filter=".chocolates">Chocolates</button>
+              </div>
+              <div class="col-md-2 col-4 p-0 m-0">
+                <button class="FilterBtn w-100" data-filter=".sweeteners">Sweeteners</button>
+              </div>
+              <div class="col-md-2 col-4 p-0 m-0">
+                <button class="FilterBtn w-100" data-filter=".chawanprash">Chawanprash</button>
+              </div>
+              <div class="col-md-2 col-4 p-0 m-0">
+                <button class="FilterBtn w-100" data-filter=".chewing-gums">Chewing Gums</button>
+              </div>
+              <div class="col-md-2 col-4 p-0 m-0">
+                <button class="FilterBtn w-100" data-filter=".snacks">Snacks</button>
+              </div>
+              <div class="col-md-2 col-4 p-0 m-0">
+                <button class="FilterBtn w-100" data-filter=".vinegar">Vinegar</button>
+              </div>
+              <div class="col-md-2 col-4 p-0 m-0">
+                <button class="FilterBtn w-100" data-filter=".diabetic-care-atta">Diabetic Care Atta</button>
+              </div>
+              <div class="col-md-2 col-4 p-0 m-0 ">
+                <button class="FilterBtn w-100" data-filter=".jams-spreads">Jams & Spreads</button>
+              </div>
+              <div class="col-md-2 col-4 p-0 m-0">
+                <button class="FilterBtn w-100" data-filter=".juices-syrups">Juices & Syrups</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  
+<div class="row">
+  <div class="breadcrumb col-12 pl-5" style="background-color: #fff;;">
+    <a href="../index.html" class="breadcrumb-item text-decoration">Home</a>
+
+    <span class="breadcrumb-item active text-decoration">Shop</span>
+  </div>
+</div>
+  
+  <!-- cart + summary -->
+  <div class="container p-3 ">
+    <div class="row ">
+      <div class="col-md-8 ml-3 ml-md-4  " style="box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);">
+
+        <div class="title">
+          <div class="row">
+            <div class="col-12 text-right font-weight-bold text-muted mb-3">3 items</div>
+          </div>
+        </div>
+
+          <div class="row  pb-3  pr-3 pr-md-3">
+            <div class="col pl-2 pl-md-3 "><img class="img-fluid" style="width: 5.0rem;" src="../assets/img/LoginLogo.jpeg">
+            </div>
+            <div class="col">
+              <div class="row text-muted text-wrap-ellipsis">
+                <a href="#" style="color:rgb(39, 39, 39);text-decoration:none;">
+                  <h6 class="card-title font-weight-bold text-wrap-ellipsis">
+                    Ambriona Keto Chocolate Pack of 3 Sugar Free Dark Chocolate 65% – 72% Cocoa with Almonds
+                    Hazelnut All Natural Lactose Free Sweetened with Stevia Low carb Maltitol Free High
+                    Protein 3 x 50 gm = 150 gm
+                  </h6>
+                </a>
+              </div>
+              <div class="row">100gm</div>
+            </div>
+            <div class="col-3  pl-2 pr-0 pl-md-4 pr-md-4 ">
+              <form action="#" class="display-flex">
+                <button class="qtyminus w-50 p-1" style="height:35px;border-radius: 5px; outline: none; background-color:#f7f7f7; color: rgb(0, 0, 0);" >-</button>
+                <input type="text" name="quantity" value="1" class="qty w-50 h-50 text-center mt-2"
+                  style="border: none; outline: none;">
+                  <button class="qtyminus w-50 p-1" style="height:35px;border-radius: 5px; outline: none; background-color:#ffffff; color: rgb(0, 0, 0);" >+</button>
+                </form>
+             </div>
+            <div class="col-3 ">
+              <b>&#8377;</b> 44.00
+            </div>
+            <div class="col-1">
+                <button class="close-button p-2 p-md-3">
+                </button>
+            
+            </div>
+          </div>
+          <div class="row  pb-3  pr-3 pr-md-3">
+            <div class="col pl-2 pl-md-3 "><img class="img-fluid" style="width: 5.0rem;" src="../assets/img/LoginLogo.jpeg">
+            </div>
+            <div class="col">
+              <div class="row text-muted text-wrap-ellipsis">
+                <a href="#" style="color:rgb(39, 39, 39);text-decoration:none;">
+                  <h6 class="card-title font-weight-bold text-wrap-ellipsis">
+                    Ambriona Keto Chocolate Pack of 3 Sugar Free Dark Chocolate 65% – 72% Cocoa with Almonds
+                    Hazelnut All Natural Lactose Free Sweetened with Stevia Low carb Maltitol Free High
+                    Protein 3 x 50 gm = 150 gm
+                  </h6>
+                </a>
+              </div>
+              <div class="row">100gm</div>
+            </div>
+            <div class="col-3  pl-2 pr-0 pl-md-4 pr-md-4 ">
+              <form action="#" class="display-flex">
+                <button class="qtyminus w-50 p-1" style="height:35px;border-radius: 5px; outline: none; background-color:#f7f7f7; color: rgb(0, 0, 0);" >-</button>
+                <input type="text" name="quantity" value="1" class="qty w-50 h-50 text-center mt-2"
+                  style="border: none; outline: none;">
+                  <button class="qtyminus w-50 p-1" style="height:35px;border-radius: 5px; outline: none; background-color:#ffffff; color: rgb(0, 0, 0);" >+</button>
+                </form>
+              
+            </div>
+            <div class="col-3 ">
+              <b>&#8377;  </b> 44.00
+            </div>
+            <div class="col-1">
+              <button class="close-button p-2 p-md-3">
+              </button>
+          
+          </div>
+          </div>
+      </div>
+
+
+
+
+      <div class="col-md-3 ml-md-5 mt-5 mt-md-0 p-3 " style="box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);">
+        <div id="cart" class="p-3 mx-auto bg-white rounded">
+          <div class="d-flex justify-content-between align-items-center mb-5">
+            <div class="h4 font-weight-bold">Cart Summary</div>
+
+          </div>
+
+
+          <div class="d-flex align-items-center">
+            <div class="display-5">Subtotal</div>
+            <div class="ml-auto "><b>&#8377;  </b>80.9</div>
+          </div>
+          <div class="d-flex align-items-center py-2 border-bottom">
+            <div class="display-5">Shipping</div>
+            <div class="ml-auto"><b>&#8377;  </b>12.9</div>
+          </div>
+          <div class="d-flex align-items-center py-2">
+            <div class="display-5">Total</div>
+            <div class="ml-auto d-flex">
+              <div class="text-primary  px-3"><b>&#8377;  </b></div>
+              <div class="font-weight-bold">92.98</div>
+            </div>
+          </div>
+          <a href="../Component/Orderhistory.html"><button class="round-black-btn w-100">CHECKOUT</button></a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section id="Shopping">
+    <div class="container  " style="          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);      
+    ">
+      <div class="single col-12 p-3" style="border: none;" >
+
+        <h4 class="fliter-text p-3  font-weight-bold"><i>Items You May Like </i></h4>
+      </div>
+
+      <div class="row p-3">
+        <div class="col-md-2 col-4   ">
+          <div class="productCard  ">
+            <div class="productCard-pic hov-img0">
+              <img src="../assets/img/LoginLogo.jpeg" class="" alt="IMG-PRODUCT" />
+
+              <a href="#" class="quickView-btn p-1 w-75 text-center" data-toggle="modal" data-target="#QuickView"
+                href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Quick View
+              </a>
+            </div>
+
+            <div class="Text ">
+              <div class="Description mt-3">
+                <a href="#" style="color:rgb(39, 39, 39);text-decoration:none;">
+                  <h6 class="card-title font-weight-bold text-wrap-ellipsis">
+                    Ambriona Keto Chocolate Pack of 3 Sugar Free Dark Chocolate 65% – 72% Cocoa with Almonds
+                    Hazelnut All Natural Lactose Free Sweetened with Stevia Low carb Maltitol Free High
+                    Protein 3 x 50 gm = 150 gm
+                  </h6>
+                </a>
+
+                <div class="wishlist ">
+                  <h6 class="font-weight-bold"> &#8377;120.00</strong>
+                    <a href="#" class="">
+                      <i class="far fa-heart float-right " style="color: #000000;"></i></a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-4   ">
+          <div class="productCard  ">
+            <div class="productCard-pic hov-img0">
+              <img src="../assets/img/LoginLogo.jpeg" class="" alt="IMG-PRODUCT" />
+
+              <a href="#" class="quickView-btn p-1 w-75 text-center" data-toggle="modal" data-target="#QuickView"
+                href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Quick View
+              </a>
+            </div>
+
+            <div class="Text ">
+              <div class="Description mt-3">
+                <a href="#" style="color:rgb(39, 39, 39);text-decoration:none;">
+                  <h6 class="card-title font-weight-bold text-wrap-ellipsis">
+                    Ambriona Keto Chocolate Pack of 3 Sugar Free Dark Chocolate 65% – 72% Cocoa with Almonds
+                    Hazelnut All Natural Lactose Free Sweetened with Stevia Low carb Maltitol Free High
+                    Protein 3 x 50 gm = 150 gm
+                  </h6>
+                </a>
+
+                <div class="wishlist ">
+                  <h6 class="font-weight-bold"> &#8377;120.00</strong>
+                    <a href="#" class="">
+                      <i class="far fa-heart float-right " style="color: #000000;"></i></a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-4   ">
+          <div class="productCard  ">
+            <div class="productCard-pic hov-img0">
+              <img src="../assets/img/LoginLogo.jpeg" class="" alt="IMG-PRODUCT" />
+
+              <a href="#" class="quickView-btn p-1 w-75 text-center" data-toggle="modal" data-target="#QuickView"
+                href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Quick View
+              </a>
+            </div>
+
+            <div class="Text ">
+              <div class="Description mt-3">
+                <a href="#" style="color:rgb(39, 39, 39);text-decoration:none;">
+                  <h6 class="card-title font-weight-bold text-wrap-ellipsis">
+                    Ambriona Keto Chocolate Pack of 3 Sugar Free Dark Chocolate 65% – 72% Cocoa with Almonds
+                    Hazelnut All Natural Lactose Free Sweetened with Stevia Low carb Maltitol Free High
+                    Protein 3 x 50 gm = 150 gm
+                  </h6>
+                </a>
+
+                <div class="wishlist ">
+                  <h6 class="font-weight-bold"> &#8377;120.00</strong>
+                    <a href="#" class="">
+                      <i class="far fa-heart float-right " style="color: #000000;"></i></a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-4   ">
+          <div class="productCard  ">
+            <div class="productCard-pic hov-img0">
+              <img src="../assets/img/LoginLogo.jpeg" class="" alt="IMG-PRODUCT" />
+
+              <a href="#" class="quickView-btn p-1 w-75 text-center" data-toggle="modal" data-target="#QuickView"
+                href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Quick View
+              </a>
+            </div>
+
+            <div class="Text ">
+              <div class="Description mt-3">
+                <a href="#" style="color:rgb(39, 39, 39);text-decoration:none;">
+                  <h6 class="card-title font-weight-bold text-wrap-ellipsis">
+                    Ambriona Keto Chocolate Pack of 3 Sugar Free Dark Chocolate 65% – 72% Cocoa with Almonds
+                    Hazelnut All Natural Lactose Free Sweetened with Stevia Low carb Maltitol Free High
+                    Protein 3 x 50 gm = 150 gm
+                  </h6>
+                </a>
+
+                <div class="wishlist ">
+                  <h6 class="font-weight-bold"> &#8377;120.00</strong>
+                    <a href="#" class="">
+                      <i class="far fa-heart float-right " style="color: #000000;"></i></a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-4   ">
+          <div class="productCard  ">
+            <div class="productCard-pic hov-img0">
+              <img src="../assets/img/LoginLogo.jpeg" class="" alt="IMG-PRODUCT" />
+
+              <a href="#" class="quickView-btn p-1 w-75 text-center" data-toggle="modal" data-target="#QuickView"
+                href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Quick View
+              </a>
+            </div>
+
+            <div class="Text ">
+              <div class="Description mt-3">
+                <a href="#" style="color:rgb(39, 39, 39);text-decoration:none;">
+                  <h6 class="card-title font-weight-bold text-wrap-ellipsis">
+                    Ambriona Keto Chocolate Pack of 3 Sugar Free Dark Chocolate 65% – 72% Cocoa with Almonds
+                    Hazelnut All Natural Lactose Free Sweetened with Stevia Low carb Maltitol Free High
+                    Protein 3 x 50 gm = 150 gm
+                  </h6>
+                </a>
+
+                <div class="wishlist ">
+                  <h6 class="font-weight-bold"> &#8377;120.00</strong>
+                    <a href="#" class="">
+                      <i class="far fa-heart float-right " style="color: #000000;"></i></a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-4   ">
+          <div class="productCard  ">
+            <div class="productCard-pic hov-img0">
+              <img src="../assets/img/LoginLogo.jpeg" class="" alt="IMG-PRODUCT" />
+
+              <a href="#" class="quickView-btn p-1 w-75 text-center" data-toggle="modal" data-target="#QuickView"
+                href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Quick View
+              </a>
+            </div>
+
+            <div class="Text ">
+              <div class="Description mt-3">
+                <a href="#" style="color:rgb(39, 39, 39);text-decoration:none;">
+                  <h6 class="card-title font-weight-bold text-wrap-ellipsis">
+                    Ambriona Keto Chocolate Pack of 3 Sugar Free Dark Chocolate 65% – 72% Cocoa with Almonds
+                    Hazelnut All Natural Lactose Free Sweetened with Stevia Low carb Maltitol Free High
+                    Protein 3 x 50 gm = 150 gm
+                  </h6>
+                </a>
+
+                <div class="wishlist ">
+                  <h6 class="font-weight-bold"> &#8377;120.00</strong>
+                    <a href="#" class="">
+                      <i class="far fa-heart float-right " style="color: #000000;"></i></a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-4   ">
+          <div class="productCard  ">
+            <div class="productCard-pic hov-img0">
+              <img src="../assets/img/LoginLogo.jpeg" class="" alt="IMG-PRODUCT" />
+
+              <a href="#" class="quickView-btn p-1 w-75 text-center" data-toggle="modal" data-target="#QuickView"
+                href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Quick View
+              </a>
+            </div>
+
+            <div class="Text ">
+              <div class="Description mt-3">
+                <a href="#" style="color:rgb(39, 39, 39);text-decoration:none;">
+                  <h6 class="card-title font-weight-bold text-wrap-ellipsis">
+                    Ambriona Keto Chocolate Pack of 3 Sugar Free Dark Chocolate 65% – 72% Cocoa with Almonds
+                    Hazelnut All Natural Lactose Free Sweetened with Stevia Low carb Maltitol Free High
+                    Protein 3 x 50 gm = 150 gm
+                  </h6>
+                </a>
+
+                <div class="wishlist ">
+                  <h6 class="font-weight-bold"> &#8377;120.00</strong>
+                    <a href="#" class="">
+                      <i class="far fa-heart float-right " style="color: #000000;"></i></a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-4   ">
+          <div class="productCard  ">
+            <div class="productCard-pic hov-img0">
+              <img src="../assets/img/LoginLogo.jpeg" class="" alt="IMG-PRODUCT" />
+
+              <a href="#" class="quickView-btn p-1 w-75 text-center" data-toggle="modal" data-target="#QuickView"
+                href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Quick View
+              </a>
+            </div>
+
+            <div class="Text ">
+              <div class="Description mt-3">
+                <a href="#" style="color:rgb(39, 39, 39);text-decoration:none;">
+                  <h6 class="card-title font-weight-bold text-wrap-ellipsis">
+                    Ambriona Keto Chocolate Pack of 3 Sugar Free Dark Chocolate 65% – 72% Cocoa with Almonds
+                    Hazelnut All Natural Lactose Free Sweetened with Stevia Low carb Maltitol Free High
+                    Protein 3 x 50 gm = 150 gm
+                  </h6>
+                </a>
+
+                <div class="wishlist ">
+                  <h6 class="font-weight-bold"> &#8377;120.00</strong>
+                    <a href="#" class="">
+                      <i class="far fa-heart float-right " style="color: #000000;"></i></a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+    
+    <div class="modal fade" id="QuickView" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+
+          <div class="modal-header p-0 ">
+            <button type="button" class="custom-close-btn" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <a href="ProductDetails.html" title="View More"> <button class="btnmodal  float-right mb-5"
+                style="background: white; padding: 0;border: none;outline: none;"><img src="../assets/img/ViewMore.png"
+                  style="width: 25px;background: white;" alt=""></button>
+              <hr>
+            </a>
+
+            <div class="container">
+
+              <div class="row">
+
+                <div class="col-md-6 " >
+                  <div class="product-imgs" >
+                  
+                    <div class="img-display" style="      background-color: #fff;
+                    border-radius: 10px;            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);      
+                    ">
+                      <div class="img-showcase ">
+                        <img src="../assets/img/4.png" alt="">
+                        <img src="../assets/img/30.png" alt="">
+                        <img src="../assets/img/1.png" alt="">
+                        <img src="../assets/img/2.png" alt="">
+
+                      </div>
+                    </div>
+                    <div class="img-select" style="      background-color: #fff;
+                    border-radius: 10px;            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);      
+                    ">
+                      <div class="img-item">
+                        <a href="#" data-id="1">
+                          <img src="../assets/img/4.png" alt="">
+                        </a>
+                      </div>
+                      <div class="img-item">
+                        <a href="#" data-id="2">
+                          <img src="../assets/img/30.png" alt="">
+                        </a>
+                      </div>
+                      <div class="img-item">
+                        <a href="#" data-id="3">
+                          <img src="../assets/img/1.png" alt="">
+                        </a>
+                      </div>
+                      <div class="img-item">
+                        <a href="#" data-id="4">
+                          <img src="../assets/img/2.png" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="col-md-6 ">
+                  <div class="product-dtl">
+                    <div class="product-info">
+                      <div class="product-name">
+                        <a href="#" style="color:rgb(39, 39, 39);text-decoration:none;">
+                          <h6 class="card-title font-weight-bold text-wrap-ellipsis">
+                            Ambriona Keto Chocolate Pack of 3 Sugar Free Dark Chocolate 65% – 72% Cocoa with Almonds
+                            Hazelnut All Natural Lactose Free Sweetened with Stevia Low carb Maltitol Free High
+                            Protein 3 x 50 gm = 150 gm
+                          </h6>
+                        </a>
+        
+                      </div>
+                      <div class="reviews-counter">
+                        <div class="rate">
+                          <input type="radio" id="star5" name="rate" value="5" checked />
+                          <label for="star5" title="text">5 stars</label>
+                          <input type="radio" id="star4" name="rate" value="4" checked />
+                          <label for="star4" title="text">4 stars</label>
+                          <input type="radio" id="star3" name="rate" value="3" checked />
+                          <label for="star3" title="text">3 stars</label>
+                          <input type="radio" id="star2" name="rate" value="2" />
+                          <label for="star2" title="text">2 stars</label>
+                          <input type="radio" id="star1" name="rate" value="1" />
+                          <label for="star1" title="text">1 star</label>
+                        </div>
+                        <span>3 Reviews</span>
+                      </div>
+                      <div class="product-price-discount"><span>Rs 39.00</span><span class="line-through">Rs 29.00</span>
+                      </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                      labore
+                      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea commodo consequat.</p>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <label for="size">Gram</label>
+                        <select id="size" name="size" class="form-control">
+                          <option>100gm</option>
+                          <option>200gm</option>
+                          <option>500gm</option>
+                          <option>1000kg</option>
+                        </select>
+                      </div>
+                      <div class="col-6">
+                        <div class="product-count  ">
+                          <label for="size">Quantity</label>
+                          <form action="#" class="display-flex w-100">
+                            <div class="qtyminus">-</div>
+                            <input type="text" name="quantity" value="1" class="qty">
+                            <div class="qtyplus">+</div>
+                          </form>
+  
+                        </div>
+                      
+                      </div>
+                      <div class="col-6">
+                        <button class="round-black-btn" style="font-size: 11px;height: 50px;">Add to Cart</button>
+
+                      </div>
+                      <div id="social_media" class="col-12 d-flex justify-content-center mt-4">
+
+                        <a href="#"><i class="fab fa-facebook p-3" style="color: #575656;"></i></a>
+                        <a href="#"><i class="fab fa-twitter p-3" style="color: #575656;"></i></a>
+                        <a href="#"><i class="fab fa-instagram p-3 "style="color: #575656;"></i></a>
+                        <a href="#"><i class="fab fa-pinterest p-3" style="color: #575656;"></i></a>
+                      </div>
+              
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+
+  <script src="../assets/js/ProductModal.js"></script>
+
+</body>
+
+</html>
+
+</html>

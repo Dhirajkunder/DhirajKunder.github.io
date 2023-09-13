@@ -1,0 +1,123 @@
+.custom-top-right {
+    top: -40px;
+    right: -40px;
+  }
+  
+      .tab-pane.fade .form-check-label {
+        color: #050505;
+        font-weight: bold; /* Adding bold font-weight for checkbox text */
+      }
+  
+  
+      /* Custom CSS for the buttons inside the modal */
+      .modal-footer .btn {
+        border-radius: 5px;
+      }
+  
+      /* Set a fixed height for the tab content */
+      .tab-content {
+        height: 550px; /* Adjust this value as needed to fit your content */
+        overflow-y: auto;
+      }
+  
+      /* Adjust the form components' sizes to fit the huge square modal */
+      /* .modal-body form {
+        height: 100%;
+      } */
+  
+      .tab-pane {
+        padding: 20px; /* Add some padding to create space between the form and the border */
+      }
+  
+      /* Additional spacing between form elements */
+      .form-group {
+        margin-bottom: 15px; /* Adjust this value to control the spacing */
+      }
+  
+      /* Custom CSS for active tab text color */
+      .nav-tabs .nav-item.show .nav-link,
+      .nav-tabs .nav-item.show .nav-link:hover,
+      .nav-tabs .nav-item.show .nav-link:focus,
+      .nav-tabs .nav-item.active .nav-link,
+      .nav-tabs .nav-item.active .nav-link:hover,
+      .nav-tabs .nav-item.active .nav-link:focus,
+      .tab-pane.fade.show.active {
+        color: black;
+      }
+  
+      .bg-black{
+        background-color: black;
+  
+      }
+  
+      /* Custom CSS for keeping button color the same on hovering */
+      .btn-primary:hover {
+        background-color: black;
+        border-color: black;
+      }
+  
+      /* Custom CSS for changing form-check-label color to white */
+      .form-check-label {
+        color: #ffffff;
+        font-weight: bold; /* Adding bold font-weight for checkbox text */
+      }
+  
+      /* Custom CSS for making login and signup tabs black when selected */
+      .nav-tabs .nav-item .nav-link.active {
+        background-color: black;
+        color: white;
+      }
+  
+      .nav-tabs .nav-link {
+        color: black;
+      }
+  @media (max-width: 576px) {
+        .tab-content {
+          height: auto;
+        }
+      }
+  
+  
+      .custom-close-btn {
+        position: absolute;
+        top: -20px;
+        right: -10px;
+        z-index: 1060;
+        font-size: 1rem; /* Decrease the font size for a smaller icon */
+        color: #000;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 4px solid #000; /* Add a thick border */
+        padding: -0.5em; /* Adjust padding to create a perfect circle */
+        transition: color 0.3s ease, border-color 0.3s ease; /* Add transitions for color and border-color change on hover */
+      }
+  
+      .custom-close-btn:hover {
+        color: red; /* Change color to red on hovering */
+        border-color: red; /* Change border color to red on hovering */
+      }
+  
+      .custom-close-btn::before,
+      .custom-close-btn::after {
+        content: "";
+        position: absolute;
+        width: 1px; /* Adjust thickness of the "X" */
+        height: 10px; /* Adjust the height of the "X" */
+        background-color: #000;
+        border-radius: 4px solid #000;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        transition: background-color 0.3s ease; /* Add transition for background color change on hover */
+      }
+  
+      .custom-close-btn::after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+  
+      .custom-close-btn:hover::before,
+      .custom-close-btn:hover::after {
+        background-color: red; /* Change background color to red on hovering */
+      }
+  
+  

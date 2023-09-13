@@ -1,0 +1,66 @@
+.menu-products svg,
+.menu-products img {
+  height: 50px;
+  width: 55px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+}
+
+.cart-number {
+  display: inline-block;
+  width: 30px;
+  height: 30x;
+  right: -65px;
+  top: -15px;
+  background-color: #1ef202;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 17px;
+  position: relative;
+  color: #fff;
+}
+.search-form-product .form-control {
+flex: 1; /* Let the search bar expand to take available space */
+font-size: 15px;
+background: #f7f7f7;
+border-radius: 5px;
+border: 1.5px solid #e0e0e0;
+}
+
+.search-form-product .form-control {
+  width: 100%;
+  font-size: 15px;
+background: #f7f7f7;
+border-radius: 5px;
+border: 1.5px solid #e0e0e0;
+
+}
+
+/* Custom styles for the search button */
+.search-form-product .btn-search {
+  font-size: 15px;
+background: #f7f7f7;
+border-radius: 5px;
+border: 1.5px solid #e0e0e0;
+}
+.search-form-product .form-control,
+.search-form-product .btn-search {
+
+height: 45px;
+line-height: 25px; /* Center the text vertically */
+}
+
+
+/* Custom styles for other navbar links */
+.navbar .navbar-nav .nav-item .nav-link {
+color: white;
+}
+.navbar .navbar-nav .category-tab .nav-link {
+background-color: green;
+height: 100%;
+}
+
+/* Custom style for the active link */
+.navbar .navbar-nav .nav-item.active .nav-link {
+background-color: green;
+}
