@@ -60,9 +60,17 @@
   width: 300px;
 
 }
+
+#Cart img{
+  height: 70px !important;
+}
+#wishlist img{
+  height: 70px !important;
+  
+}
   
   .logo-image{
-    width: 120px;
+    width: 100px;
   }
   .header-icons{
       padding-left: 50px;

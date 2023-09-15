@@ -52,20 +52,20 @@
           </div>
         </div>
 
+        </div>
       </div>
-    </div>
     <div class="Header " style=" background-color: white;  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2)">
       <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light pt-md-3" id="ftco-navbar">
 
         <div class="container">
           <div class="row " style="height: 60px;"> <!-- Added a new div for logo and search and toggle -->
-            <div class="col-1">
-              <a class="navbar-brand" href="index.html">
+            <div class="col-2">
+              <a class="navbar-brand" href="../index.html">
                 <img src="https://altcheeni.com/wp-content/uploads/2022/01/Mainlogo2.png" class="logo-image"
                   alt="Altcheeni" style="height: 50px;" />
               </a>
             </div>
-            <div class="col-10 mt-4  text-right  d-md-none"> <!-- Changed "float-right" to "text-right" -->
+            <div class="col-10 mt-4  text-right  d-md-none" style="width: 115px"> <!-- Changed "float-right" to "text-right" -->
               <a href="" class="p-4 " data-toggle="modal" data-target="#loginModal" id="dropdown04">
                 <i class="far fa-user" style="color:  #3f3e3e;"></i>
               </a>
@@ -100,7 +100,7 @@
               <li class="nav-item"><a href="../Component/Shop.html" class="nav-link">Shop</a></li>
               <li class="nav-item"><a href="../Component/Contact.html" class="nav-link">Contact</a></li>
               <li class="nav-item">
-
+                
 
 
               </li>
@@ -121,24 +121,23 @@
 
 
       </nav>
-      <div class="col-12 pl-3 pr-3  pb-1">
-        <form role="search" method="get" class="search-form  d-md-none w-100" action="">
-          <div class="form-group has-search">
-            <span class="fa fa-search form-control-feedback"></span>
-            <input type="text" class="form-control " placeholder="Search">
-          </div>
-        </form>
+        <div class="col-12 pl-3 pr-3  pb-1">
+          <form role="search" method="get" class="search-form  d-md-none w-100" action="">
+            <div class="form-group has-search">
+              <span class="fa fa-search form-control-feedback"></span>
+              <input type="text" class="form-control " placeholder="Search">
+            </div>
+          </form>
 
-      </div>
+        </div>
     </div>
 
 
 
 
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-      aria-hidden="true">
-      <div class="modal-dialog  mt-5 mr-4 login-rectangle-modal modal-lg" role="document"
-        style="margin-right:% !important;      ">
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog  mt-5 mr-4 login-rectangle-modal modal-lg" role="document" style="margin-right:% !important;      ">
         <div class="modal-content d-flex justify-content-center ">
           <div class="modal-header p-0 ">
             <button type="button" class="custom-close-btn" data-dismiss="modal" aria-label="Close">
@@ -252,9 +251,9 @@
 
     <div class="modal fade" id="categoryModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel"
       aria-hidden="true">
-      <div class="modal-dialog category-rectangle-modal" role="document">
-        <div class="modal-content">
-          <div class="containers p-3" style="background-color: white;border-radius: 50px !important;">
+      <div class="modal-dialog category-rectangle-modal" role="document" >
+        <div class="modal-content" >
+          <div class="containers p-3" style="background-color: white;border-radius: 50px !important;" >
             <div class="card">
               <h3 class="text-center p-3 homeTitle"><i>Browse Categories</i></h3>
             </div>
@@ -308,7 +307,6 @@
 
   </section>
 
-
   <div class="breadcrumb card p-0 mb-3" style="background-color: #fff;border-radius: 10px;">
     <div class="row">
       <div class="breadcrumb col-12 pl-5" style="background-color: #fff;;">
@@ -330,11 +328,11 @@
             </div>
           </div>
 
-          <div class="row  pb-3  pr-3 pr-md-3">
-            <div class="col-md-2 col-3 pr-4 pl-md-3 "><img class="img-fluid" style="width: 5.0rem;"
-                src="../assets/img/LoginLogo.jpeg">
+          <div class="row  pb-3   pr-md-3">
+            <div class="col-3 col-md-2 ">
+              <img class="img-fluid " style=" width: 90px;" src="../assets/img/LoginLogo.jpeg">
             </div>
-            <div class="col-2 col-md-3 p-0 pr-md-4">
+            <div class="col col-md-4 ">
               <div class="row text-muted text-wrap-ellipsis">
                 <a href="#" style="color:rgb(39, 39, 39);text-decoration:none;">
                   <h6 class="card-title font-weight-bold text-wrap-ellipsis">
@@ -346,22 +344,23 @@
               </div>
               <div class="row">100gm</div>
             </div>
-            <div class="col-md-3 col-3  pl-3 p-0 ">
+            <div class=" col-4  p-0 pl-4">
               <button class="custom-btn w-100"> Add To cart</button>
+              <div class="col- pt-2 ml-md-5">
+                <b>&#8377;</b> 44.00
+              </div>
             </div>
-            <div class="col-3 pt-2 ml-md-5">
-              <b>&#8377;</b> 44.00
-            </div>
-            <div class="col-0">
-              <button class="close-button p-3" style="outline: none;border-color: #777777;">
+            
+            <div class="col col-md-1 ">
+              <button class="close-button p-2 p-md-3 ml-3 ml-md-5" style="outline: none;border-color: #777777;">
               </button>
             </div>
           </div>
-          <div class="row  pb-3  pr-3 pr-md-3">
-            <div class="col-md-2 col-3 pr-4 pl-md-3 "><img class="img-fluid" style="width: 5.0rem;"
-                src="../assets/img/LoginLogo.jpeg">
+          <div class="row  pb-3   pr-md-3">
+            <div class="col-3 col-md-2 ">
+              <img class="img-fluid " style=" width: 90px;" src="../assets/img/LoginLogo.jpeg">
             </div>
-            <div class="col-2 col-md-3 p-0 pr-md-4">
+            <div class="col col-md-4 ">
               <div class="row text-muted text-wrap-ellipsis">
                 <a href="#" style="color:rgb(39, 39, 39);text-decoration:none;">
                   <h6 class="card-title font-weight-bold text-wrap-ellipsis">
@@ -373,16 +372,16 @@
               </div>
               <div class="row">100gm</div>
             </div>
-            <div class="col-md-3 col-3  pl-3 p-0 ">
+            <div class=" col-4  p-0 pl-4">
               <button class="custom-btn w-100"> Add To cart</button>
+              <div class="col- pt-2 ml-md-5">
+                <b>&#8377;</b> 44.00
+              </div>
             </div>
-            <div class="col-3 pt-2 ml-md-5">
-              <b>&#8377;</b> 44.00
-            </div>
-            <div class="col-0">
-              <button class="close-button p-3" style="outline: none;border-color: #777777;">
+            
+            <div class="col col-md-1 ">
+              <button class="close-button p-2 p-md-3 ml-3 ml-md-5" style="outline: none;border-color: #777777;">
               </button>
-
             </div>
           </div>
         </div>
