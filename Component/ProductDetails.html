@@ -6,21 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Shop</title>
-
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-  <!-- Add Font Awesome CSS link -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-
-  <link rel="stylesheet" href="../assets/Css/style.css" />
-  <link rel="stylesheet" href="../assets/Css/mediaquery.css" />
-
-  <!-- Owl Carousel CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-
-  <!------ Include the above in your HEAD tag ---------->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <title>Product Details</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="../assets/Css/style.css">
+  <link rel="stylesheet" href="../assets/Css/mediaquery.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 
 </head>
@@ -28,107 +18,89 @@
 
 <body>
  
-  <section class="ftco-section  sticky-nav mb-3">
-    <div class="header-notice pt-3 ">
-      <div class="container">
+  <section class="ftco-section mb-2 " id="Header">
+    <div class="Notice" style=" background-color: white;">
+      <div class="container mt-3">
 
-      <div class="row ">
-        <div class="col-md-6 d-md-inline d-none">
-          <p class="">Free shipping on all orders above ₹ 599/-</p>
-        </div>
-        <div class="col-md-6 float-right d-md-inline d-none ">
-          <div class="row d-flex justify-content-center">
-          <div class="col-2">
-          <a href="" class="mr-4" data-toggle="modal" data-target="#exampleModalCenter" href="#" id="dropdown04"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="far fa-user" style="color:  #3f3e3e;"></i>
-          </a>
-        </div>
-        <div class="col-2">
-
-          <a href="../Component/Wishlist.html" class=" ">
-            <i class="far fa-heart" style="color: #3f3e3e;"></i>
-          </a>
+        <div class="row ">
+          <div class="col-md-6 col-12 text-center">
+            <p class="">Free shipping on all orders above ₹ 599/-</p>
           </div>
-          <div class="col-3">
-
-          <span class="cart-number">8</span>
-          <a href="../Component/Cart.html" class="">
-
-            <i class="	fas fa-shopping-cart" style="color: #9c9c9c;"></i> </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-
-        <div class="col-12">
-          <form role="search" method="get" class="search-form  d-md-none w-100" action="">
-            <div class="form-group has-search">
-              <span class="fa fa-search form-control-feedback"></span>
-              <input type="text" class="form-control " placeholder="Search">
-            </div>
-          </form>
-
-        </div>
-      </div>
-    </div>
-  </div>
-    <div class="Header " style="   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2)">
-      <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light  " id="ftco-navbar">
-
-        <div class="container" >
-          <div class="row " style="height: 60px;"> <!-- Added a new div for logo and search and toggle -->
-            <div class="col-1">
-                <a class="navbar-brand" href="index.html">
-                    <img src="https://altcheeni.com/wp-content/uploads/2022/01/Mainlogo2.png" class="logo-image" alt="Altcheeni" style="height: 60px;"/>
+          <div class="col-md-6 float-right d-md-inline d-none ">
+            <div class="row d-flex justify-content-center">
+              <div class="col-2">
+                <a href="" class="mr-4" data-toggle="modal" data-target="#loginModal" href="#" id="dropdown04"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="far fa-user" style="color:  #3f3e3e;"></i>
                 </a>
-            </div>
-            <div class="col-10 mt-4  text-right  d-md-none"> <!-- Changed "float-right" to "text-right" -->
-                <a href="" class="p-3 " data-toggle="modal" data-target="#exampleModalCenter" id="dropdown04">
-                    <i class="far fa-user" style="color:  #3f3e3e;"></i>
+              </div>
+              <div class="col-2">
+
+                <a href="../Component/Wishlist.html" class=" ">
+                  <i class="far fa-heart" style="color: #3f3e3e;"></i>
                 </a>
-                <a href="../Component/Wishlist.html" class="">
-                    <i class="far fa-heart" style="color: #3f3e3e;"></i>
-                </a>
+              </div>
+              <div class="col-3">
+
                 <span class="cart-number">8</span>
                 <a href="../Component/Cart.html" class="">
-                    <i class="fas fa-shopping-cart" style="color: #9c9c9c;"></i>
-                </a>
-            </div>
-        </div>
-        
 
-          <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#ftco-nav"
-          aria-controls="ftco-nav" aria-expanded="true" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
-        </button>
+                  <i class="	fas fa-shopping-cart" style="color: #9c9c9c;"></i> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="Header " style=" background-color: white;  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2)">
+      <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light pt-md-3" id="ftco-navbar">
+
+        <div class="container">
+          <div class="row " style="height: 60px;"> <!-- Added a new div for logo and search and toggle -->
+            <div class="col-1">
+              <a class="navbar-brand" href="../index.html">
+                <img src="https://altcheeni.com/wp-content/uploads/2022/01/Mainlogo2.png" class="logo-image"
+                  alt="Altcheeni" style="height: 50px;" />
+              </a>
+            </div>
+            <div class="col-10 mt-4  text-right  d-md-none"> <!-- Changed "float-right" to "text-right" -->
+              <a href="" class="p-4 " data-toggle="modal" data-target="#loginModal" id="dropdown04">
+                <i class="far fa-user" style="color:  #3f3e3e;"></i>
+              </a>
+              <a href="../Component/Wishlist.html" class="">
+                <i class="far fa-heart" style="color: #3f3e3e;"></i>
+              </a>
+              <span class="cart-number">8</span>
+              <a href="../Component/Cart.html" class="">
+                <i class="fas fa-shopping-cart" style="color: #9c9c9c;"></i>
+              </a>
+            </div>
+          </div>
+
+
+          <button class="navbar-toggler mt-3 " type="button" data-toggle="collapse" data-target="#ftco-nav"
+            aria-controls="ftco-nav" aria-expanded="true" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
 
           <div class="collapse navbar-collapse mt-4 mt-md-0" id="ftco-nav">
             <ul class="navbar-nav m-auto">
               <li class="nav-item active">
-                <a href="#" class="nav-link">Home</a>
+                <a href="../index.html" class="nav-link">Home</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="modal" data-target="#searchModal" href="#"
+                <a class="nav-link dropdown-toggle" data-toggle="modal" data-target="#categoryModal" href="#"
                   id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                   style="color: rgba(0, 0, 0, 0.7) !important;">Category</a>
-
-
-
               </li>
 
               <li class="nav-item"><a href="../Component/About.html" class="nav-link">About Us</a></li>
               <li class="nav-item"><a href="../Component/Shop.html" class="nav-link">Shop</a></li>
               <li class="nav-item"><a href="../Component/Contact.html" class="nav-link">Contact</a></li>
               <li class="nav-item">
-                <form role="search" method="get" class="search-form mt-3 d-md-none" action="">
-                  <div class="form-group has-search">
-                    <span class="fa fa-search form-control-feedback"></span>
-                    <input type="text" class="form-control" placeholder="Search">
-                  </div>
-                </form>
-      
+
+
 
               </li>
 
@@ -148,15 +120,25 @@
 
 
       </nav>
+      <div class="col-12 pl-3 pr-3  pb-1">
+        <form role="search" method="get" class="search-form  d-md-none w-100" action="">
+          <div class="form-group has-search">
+            <span class="fa fa-search form-control-feedback"></span>
+            <input type="text" class="form-control " placeholder="Search">
+          </div>
+        </form>
+
+      </div>
     </div>
 
 
 
 
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg mt-5 mb-md-0 " role="document">
-        <div class="modal-content">
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog  mt-5 mr-4 login-rectangle-modal modal-lg" role="document"
+        style="margin-right:% !important;      ">
+        <div class="modal-content d-flex justify-content-center ">
           <div class="modal-header p-0 ">
             <button type="button" class="custom-close-btn" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
@@ -267,53 +249,53 @@
       </div>
     </div>
 
-    <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel"
+    <div class="modal fade" id="categoryModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel"
       aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered " role="document">
+      <div class="modal-dialog category-rectangle-modal" role="document">
         <div class="modal-content">
-          <div class="containers p-3" style="background-color: white;">
+          <div class="containers p-3" style="background-color: white;border-radius: 50px !important;">
             <div class="card">
-              <h3 class="text-center p-3 font-weight-bold"><i>Browse Categories</i></h3>
+              <h3 class="text-center p-3 homeTitle"><i>Browse Categories</i></h3>
             </div>
-            
+
             <div class="row p-3">
-              <div class="col-md-2 col-4 p-0 m-0">
+              <div class="col-md-2 col-3 p-0 m-0">
                 <button class="FilterBtn active w-100" data-filter="*">All Products</button>
               </div>
-              <div class="col-md-2 col-4 p-0 m-0">
+              <div class="col-md-2 col-3 p-0 m-0">
                 <button class="FilterBtn w-100" data-filter=".ketchup">Ketchup & Sauces</button>
               </div>
-              <div class="col-md-2 col-4 p-0 m-0">
+              <div class="col-md-2 col-3 p-0 m-0">
                 <button class="FilterBtn w-100" data-filter=".sweets">Sweets</button>
               </div>
-              <div class="col-md-2 col-4 p-0 p-0 m-0">
+              <div class="col-md-2 col-3 p-0 p-0 m-0">
                 <button class="FilterBtn w-100" data-filter=".cookies">Cookies</button>
               </div>
-              <div class="col-md-2 col-4 p-0 m-0">
+              <div class="col-md-2 col-3 p-0 m-0">
                 <button class="FilterBtn w-100" data-filter=".chocolates">Chocolates</button>
               </div>
-              <div class="col-md-2 col-4 p-0 m-0">
+              <div class="col-md-2 col-3 p-0 m-0">
                 <button class="FilterBtn w-100" data-filter=".sweeteners">Sweeteners</button>
               </div>
-              <div class="col-md-2 col-4 p-0 m-0">
+              <div class="col-md-2 col-3 p-0 m-0">
                 <button class="FilterBtn w-100" data-filter=".chawanprash">Chawanprash</button>
               </div>
-              <div class="col-md-2 col-4 p-0 m-0">
+              <div class="col-md-2 col-3 p-0 m-0">
                 <button class="FilterBtn w-100" data-filter=".chewing-gums">Chewing Gums</button>
               </div>
-              <div class="col-md-2 col-4 p-0 m-0">
+              <div class="col-md-2 col-3 p-0 m-0">
                 <button class="FilterBtn w-100" data-filter=".snacks">Snacks</button>
               </div>
-              <div class="col-md-2 col-4 p-0 m-0">
+              <div class="col-md-2 col-3 p-0 m-0">
                 <button class="FilterBtn w-100" data-filter=".vinegar">Vinegar</button>
               </div>
-              <div class="col-md-2 col-4 p-0 m-0">
+              <div class="col-md-2 col-3 p-0 m-0">
                 <button class="FilterBtn w-100" data-filter=".diabetic-care-atta">Diabetic Care Atta</button>
               </div>
-              <div class="col-md-2 col-4 p-0 m-0 ">
+              <div class="col-md-2 col-3 p-0 m-0 ">
                 <button class="FilterBtn w-100" data-filter=".jams-spreads">Jams & Spreads</button>
               </div>
-              <div class="col-md-2 col-4 p-0 m-0">
+              <div class="col-md-2 col-3 p-0 m-0">
                 <button class="FilterBtn w-100" data-filter=".juices-syrups">Juices & Syrups</button>
               </div>
             </div>
@@ -324,33 +306,181 @@
 
 
   </section>
-  
-  <div class="breadcrumb" style="background-color: #fff;
-  border-radius: 10px;            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);      
-  ">
-  
+
+
+  <div class="breadcrumb card p-0 mb-3" style="background-color: #fff;border-radius: 10px;">
     <div class="row">
       <div class="breadcrumb col-12 pl-5" style="background-color: #fff;;">
         <a href="../index.html" class="breadcrumb-item text-decoration">Home</a>
-    
-        <span class="breadcrumb-item active text-decoration">Product Details</span>
+
+        <span class="breadcrumb-item active text-decoration">Shop</span>
       </div>
     </div>
   </div>
+  <!-- QUICK VIEW MODAL -->
+  <section id="Shopping" class="quickViewModal">
+
+    <div class="modal fade" id="QuickView" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+
+      <div class="modal-dialog quick-rectangle-modal" role="document">
+        <div class="modal-content ">
+
+          <div class="modal-header p-0 ">
+            <button type="button" class="custom-close-btn" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <a href="../Component/ProductDetails.html" title="View More"> <button class="btnmodal  float-right mb-5"
+                style="background: white; padding: 0;border: none;outline: none;"><img src="../assets/img/ViewMore.png"
+                  style="width: 25px;background: rgb(255, 255, 255);" alt=""></button>
+              <hr>
+            </a>
+
+            <div class="container">
+
+              <div class="row ">
+
+                <div class="col-md-6 mb-5">
+                  <div class="product-imgs">
+
+                    <div class="img-display" style="
+              background-color: #fff;
+              border-radius: 10px;
+              box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);  
+              ">
+                      <div class="img-showcase ">
+                        <img src="../assets/img/4.png" alt="">
+                        <img src="../assets/img/30.png" alt="">
+                        <img src="../assets/img/1.png" alt="">
+                        <img src="../assets/img/2.png" alt="">
+
+                      </div>
+                    </div>
+                    <div class="img-select" style="      background-color: #fff;
+              border-radius: 10px;            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);      
+              ">
+                      <div class="img-item">
+                        <a href="#" data-id="1">
+                          <img src="../assets/img/4.png" alt="">
+                        </a>
+                      </div>
+                      <div class="img-item">
+                        <a href="#" data-id="2">
+                          <img src="../assets/img/30.png" alt="">
+                        </a>
+                      </div>
+                      <div class="img-item">
+                        <a href="#" data-id="3">
+                          <img src="../assets/img/1.png" alt="">
+                        </a>
+                      </div>
+                      <div class="img-item">
+                        <a href="#" data-id="4">
+                          <img src="../assets/img/2.png" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 ">
+                  <div class="product-dtl">
+                    <div class="product-info">
+                      <div class="product-name">
+                        <a href="#" style="color:rgb(39, 39, 39);text-decoration:none;">
+                          <h6 class="card-title font-weight-bold ">
+                            Ambriona Keto Chocolate Pack of 3 Sugar Free Dark Chocolate 65% – 72% Cocoa with Almonds
+                            Hazelnut All Natural Lactose Free Sweetened with Stevia Low carb Maltitol Free High
+                            Protein 3 x 50 gm = 150 gm
+                          </h6>
+                        </a>
+
+                      </div>
+                      <div class="reviews-counter">
+                        <div class="rate">
+                          <input type="radio" id="star5" name="rate" value="5" checked />
+                          <label for="star5" title="text">5 stars</label>
+                          <input type="radio" id="star4" name="rate" value="4" checked />
+                          <label for="star4" title="text">4 stars</label>
+                          <input type="radio" id="star3" name="rate" value="3" checked />
+                          <label for="star3" title="text">3 stars</label>
+                          <input type="radio" id="star2" name="rate" value="2" />
+                          <label for="star2" title="text">2 stars</label>
+                          <input type="radio" id="star1" name="rate" value="1" />
+                          <label for="star1" title="text">1 star</label>
+                        </div>
+                        <span>3 Reviews</span>
+                      </div>
+                      <div class="product-price-discount"><span>Rs 39.00</span><span class="line-through">Rs
+                          29.00</span>
+                      </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                      labore
+                      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea commodo consequat.</p>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <label for="size">Gram</label>
+                        <select id="size" name="size" class="form-control">
+                          <option>100gm</option>
+                          <option>200gm</option>
+                          <option>500gm</option>
+                          <option>1000kg</option>
+                        </select>
+                      </div>
+                      <div class="col-6">
+                        <div class="product-count  ">
+                          <label for="size">Quantity</label>
+                          <form action="#" class="display-flex w-100">
+                            <div class="qtyminus">-</div>
+                            <input type="text" name="quantity" value="1" class="qty">
+                            <div class="qtyplus">+</div>
+                          </form>
+
+                        </div>
+
+                      </div>
+                      <div class="col-6">
+                        <button class="round-black-btn" style="font-size: 11px;height: 50px;">Add to Cart</button>
+
+                      </div>
+                      <div id="social_media" class="col-12 d-flex justify-content-center mt-4">
+
+                        <a href="#"><i class="fab fa-facebook p-3" style="color: #575656;"></i></a>
+                        <a href="#"><i class="fab fa-twitter p-3" style="color: #575656;"></i></a>
+                        <a href="#"><i class="fab fa-instagram p-3 " style="color: #575656;"></i></a>
+                        <a href="#"><i class="fab fa-pinterest p-3" style="color: #575656;"></i></a>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- content -->
-  <section id="productDetails" >
+  <section id="productDetails" style="display: flex;">
     <div class="container">
       <div class="row ">
         <div class="col-md-6 mb-5">
-          <div class="product-imgs" >
+          <div class="product-imgs"  >
                   
             <div class="img-display" style="
             background-color: #fff;
             border-radius: 10px;
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);  
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            height: 450px;  
             ">
-              <div class="img-showcase ">
+              <div class="img-showcase">
                 <img src="../assets/img/4.png" alt="">
                 <img src="../assets/img/30.png" alt="">
                 <img src="../assets/img/1.png" alt="">
@@ -358,7 +488,7 @@
 
               </div>
             </div>
-            <div class="img-select" style="      background-color: #fff;
+            <div class="img-select d-flex " style="      background-color: #fff;
             border-radius: 10px;            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);      
             ">
               <div class="img-item">
@@ -386,11 +516,11 @@
         </div>
         <div class="col-md-6">
             <a href="#" style="color:rgb(39, 39, 39);text-decoration:none;">
-              <h4 class="card-title font-weight-bold  ">
+              <h5 class="card-title font-weight-bold  ">
                  Ambriona Keto Chocolate Pack of 3 Sugar Free Dark Chocolate 65% – 72% Cocoa with Almonds
                  Hazelnut All Natural Lactose Free Sweetened with Stevia Low carb Maltitol Free High
                  Protein 3 x 50 gm = 150 gm
-               </h4> 
+               </h5> 
              </a>
             <div class="d-flex flex-row my-3">
               <div class="text-warning mb-1 me-2">
@@ -474,7 +604,7 @@
     </div>
   </section>
   <!-- content -->
-  <section id="productDetails" class="bg-light border-top mt-5">
+  <section id="Shopping" class="bg-light border-top mt-5">
     <div class="container">
       <div class="row ">
         <div class="col-lg-7 mb-4">
@@ -645,11 +775,11 @@
                         <!-- Review Modal -->
                         <div class="modal fade" id="reviewModal" tabindex="-1" role="dialog"
                           aria-labelledby="reviewModalLabel" aria-hidden="true">
-                          <div class="modal-dialog" role="document">
+                          <div class="modal-dialog custom-rectangle-modal" role="document">
                             <div class="modal-content">
                               <div class="wrapper">
                                 <div class="master">
-                                  <h1>Review And rating</h1>
+                                  <h1 class="homeTitle">Review And rating</h1>
                                   <h2>How was your experience about our product?</h2>
 
                                   <div class="rating-component">
@@ -1020,13 +1150,10 @@
           </div>
         </div>
         <div class="col-lg-5">
-          <div class="single col-12 p-3" style="            background-color: #fff;
-          border-radius: 10px;            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);      
-          ">
         
-                                  <p class="fliter-text text-center  font-weight-bold">Similar</p>
-                                </div>
-          <div class="row">
+        <h5 class="p-2 homeTitle text-center"  style="   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2)">
+          Similar Items
+        </h5>              <div class="row">
             <div class="col-md-4 col-4   ">
               <div class="productCard  ">
                 <div class="productCard-pic hov-img0">
@@ -1354,12 +1481,10 @@
     </footer>
   </div>
 
-  <!-- Bootstrap JS and jQuery -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <!-- Owl Carousel JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-  <script src="../assets/js/Script.js"></script>
+    <!-- Bootstrap JS (Make sure it's included at the end of the body) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
 </body>
 
 </html>
