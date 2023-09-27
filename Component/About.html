@@ -19,7 +19,7 @@
 
 <body>
   <section class="ftco-section mb-2 " id="Header">
-    <div class="Notice" style=" background-color: white;">
+    <div class="Notice" style=" background-color: white; position: relative;z-index: 20;">
       <div class="container mt-3">
 
         <div class="row ">
@@ -57,15 +57,21 @@
       <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light pt-md-3" id="ftco-navbar">
 
         <div class="container">
-          <div class="row " style="height: 60px;"> <!-- Added a new div for logo and search and toggle -->
-            <div class="col-2">
+          <div class="col d-md-inline d-none">
+            <a class="navbar-brand" href="../index.html">
+              <img src="https://altcheeni.com/wp-content/uploads/2022/01/Mainlogo2.png" class="logo-image mt-md-4"
+                alt="Altcheeni" style="height: 50px;" />
+            </a>
+          </div>
+          <div class="row " style="height: 150px;"> <!-- Added a new div for logo and search and toggle -->
+            <div class="col-4 d-md-none">
               <a class="navbar-brand" href="../index.html">
                 <img src="https://altcheeni.com/wp-content/uploads/2022/01/Mainlogo2.png" class="logo-image"
                   alt="Altcheeni" style="height: 50px;" />
               </a>
             </div>
-            <div class="col-10 mt-4  text-right  d-md-none" style="width: 115px"> <!-- Changed "float-right" to "text-right" -->
-              <a href="" class="p-4 " data-toggle="modal" data-target="#loginModal" id="dropdown04">
+            <div class="col-8 text-right  d-md-none" > <!-- Changed "float-right" to "text-right" -->
+              <a href="" class="pr-4 " data-toggle="modal" data-target="#loginModal" id="dropdown04">
                 <i class="far fa-user" style="color:  #3f3e3e;"></i>
               </a>
               <a href="../Component/Wishlist.html" class="">
@@ -75,24 +81,37 @@
               <a href="../Component/Cart.html" class="">
                 <i class="fas fa-shopping-cart" style="color: #9c9c9c;"></i>
               </a>
-            </div>
+
+              
+          <button class="navbar-toggler mt-3 pl-4" type="button" data-toggle="collapse" data-target="#ftco-nav"
+          aria-controls="ftco-nav" aria-expanded="true" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        
+        
+      </div>
+      <div class="col-12 pl-3 pr-3  pb-1">
+        <form role="search" method="get" class="search-form  d-md-none w-100" action="">
+          <div class="form-group has-search">
+            <span class="fa fa-search form-control-feedback"></span>
+            <input type="text" class="form-control " placeholder="Search">
+          </div>
+        </form>
+
+      </div>
           </div>
 
 
-          <button class="navbar-toggler mt-3 " type="button" data-toggle="collapse" data-target="#ftco-nav"
-            aria-controls="ftco-nav" aria-expanded="true" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-          </button>
 
           <div class="collapse navbar-collapse mt-4 mt-md-0" id="ftco-nav">
             <ul class="navbar-nav m-auto">
               <li class="nav-item active">
-                <a href="#" class="nav-link">Home</a>
+                <a href="../index.html" class="nav-link">Home</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="modal" data-target="#categoryModal" href="#"
                   id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                  style="color: rgba(0, 0, 0, 0.7) !important;">Category</a>
+                  style="color: black !important;">Category</a>
               </li>
 
               <li class="nav-item"><a href="../Component/About.html" class="nav-link">About Us</a></li>
@@ -120,15 +139,7 @@
 
 
       </nav>
-        <div class="col-12 pl-3 pr-3  pb-1">
-          <form role="search" method="get" class="search-form  d-md-none w-100" action="">
-            <div class="form-group has-search">
-              <span class="fa fa-search form-control-feedback"></span>
-              <input type="text" class="form-control " placeholder="Search">
-            </div>
-          </form>
 
-        </div>
     </div>
 
 
@@ -136,7 +147,7 @@
 
     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog"
       aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog  mt-5 mr-4 login-rectangle-modal modal-lg" role="document" style="margin-right:% !important;      ">
+      <div class="modal-dialog  mt-5 modal-lg p-4" role="document" style="right:5px">
         <div class="modal-content d-flex justify-content-center ">
           <div class="modal-header p-0 ">
             <button type="button" class="custom-close-btn" data-dismiss="modal" aria-label="Close">
@@ -250,7 +261,7 @@
 
     <div class="modal fade" id="categoryModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel"
       aria-hidden="true">
-      <div class="modal-dialog category-rectangle-modal" role="document" >
+      <div class="modal-dialog modal-lg p-4" role="document" style="right: 5px;" >
         <div class="modal-content" >
           <div class="containers p-3" style="background-color: white;border-radius: 50px !important;" >
             <div class="card">
@@ -305,17 +316,17 @@
 
 
   </section>
-
-
-  <div class="breadcrumb card p-0 mb-3" style="background-color: #fff;border-radius: 10px;">
+  
+  <div class="breadcrumb container mb-3" style="background-color: #fff;border-radius: 10px;position: relative;z-index: 21;">
     <div class="row">
-      <div class="breadcrumb col-12 pl-5" style="background-color: #fff;;">
+      <div class="breadcrumb col-12 " style="background-color: #fff;;">
         <a href="../index.html" class="breadcrumb-item text-decoration">Home</a>
-
+    
         <span class="breadcrumb-item active text-decoration">About</span>
       </div>
     </div>
   </div>
+
 
   <main>
     <div class="aboutUs">
@@ -328,7 +339,7 @@
         <div class="row">
           <!-- Text on the left -->
           <div class="col-sm-12 col-md-6 py-4">
-            <p class="text-left font-weight-bolder mb-4" style="font-size: 35px; line-height: 41px;">What Is Altcheeni?
+            <p class="text-left font-weight-bolder mb-4 text-uppercase" style="font-size: 25px; line-height: 41px;">What Is Altcheeni?
             </p>
             <p>
               Who doesn’t love sweets? Ya, everybody loves it, but what if the sugar is causing damage to your body?
@@ -369,7 +380,7 @@
         <div class="row">
           <!-- Text on the right (will be first for mobile view) -->
           <div class="col-sm-12 col-md-6 order-md-2 py-4">
-            <p class="text-left font-weight-bold mb-4" style="font-size: 35px; line-height: 41px;">OUR VISION</p>
+            <p class="text-left font-weight-bold mb-4 text-uppercase" style="font-size: 25px; line-height: 41px;">OUR VISION</p>
             <p>
               Due to drastic change in lifestyle today India is inclining towards being Diabetic Capital of the world.
               According to some studies it is estimated that more than 15% of Indian population is diabetic or prone to
@@ -404,8 +415,9 @@
       </div>
 
       <div class="container mt-5">
-        <h1 class="text-center font-weight-bold mb-4">Testimonials</h1>
-        <div class="row">
+        <p class="text-center font-weight-bolder mb-4 text-uppercase" style="font-size: 25px; line-height: 41px;">Testimonial
+        </p>
+       <div class="row">
           <!-- Testimonial 1 -->
           <div class="col-md-4">
             <div class="card">
@@ -510,130 +522,121 @@
       </div>
     </div>
   </main>
+ 
   <!-- For footer   -->
-  <div style="min-height: 100vh; display: flex; flex-direction: column;width: 100%;">
-    <footer class="has-footer-widgets p-4 mt-auto" style="background-color: black; color: #d2d2d3;">
-      <div class="container footer-top">
-        <div class="row footer-row-1">
-          <!-- Logo and About Us Column -->
-          <div class="col-md-5 widget widget_text  float-left">
-            <aside id="custom_html-1" class="widget_text widget vc_column_vc_container widget_custom_html">
-              <div class="textwidget custom-html-widget">
-                <img src="https://altcheeni.com/wp-content/uploads/2022/01/Mainlogo2.png" />
-                <p style="    display: block;
-            margin-block-start: 1em;
-            margin-block-end: 1em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            font-family: Poppins;
-            font-weight: 400">
-                  Get the latest updates on new products and upcoming sales
-                </p>
-                </a>
-              </div>
-            </aside>
-            <aside class="d-flex justify-content-start ">
-              <div class="sidebar-social-networks">
-                <ul>
-                  <li><a href="https://www.facebook.com/altcheeni"><img
-                        src="https://altcheeni.com/wp-content/uploads/2022/01/facebook-1.png"></a>
-                  </li>
-                  <li><a href="https://www.linkedin.com/company/77772178/"><img
-                        src="https://altcheeni.com/wp-content/uploads/2022/01/linkedin.png"></a>
-                  </li>
-                  <li><a href="https://www.instagram.com/altcheeni/"><img
-                        src="https://altcheeni.com/wp-content/uploads/2022/01/instagram.png"></a>
-                  </li>
-                </ul>
-              </div>
-            </aside>
-          </div>
+  <footer class="FooterMain p-4  mt-5" id="footerCSS"
+  style=" background-color: white;  box-shadow: 0px -13px 20px rgba(0, 0, 0, 0.2);color: black; ;">
+   <div class="container footer-top">
+     <div class="row footer-row-1">
+       <!-- Logo and About Us Column -->
+       <div class="col-md-5 widget widget_text  float-left">
+         
+           <div class="ImageLogo">
+             <img class="footer-logo-image pb-3" src="../assets/img/Mainlogo2.png" />
+             <p>
+               Get the latest updates on new products and upcoming sales
+             </p>
 
-          <!-- Information Column -->
-          <div class="col-md-2 widget widget_text">
-            <h4 class="widget-title" id="informationToggle" style="color: whitesmoke;">Information</h4>
-            <div class="menu-about-container mt-4">
-              <ul id="menu-about" class="menu" style="color: #d2d2d3;">
-                <li><i class="fas fa-angle-double-right mr-2"
-                    style="text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);"></i><a
-                    href="https://altcheeni.com/">Home</a></li>
-                <li><i class="fas fa-angle-double-right mr-2"
-                    style="text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);"></i><a
-                    href="https://altcheeni.com/about/">About Us</a></li>
-                <li><i class="fas fa-angle-double-right mr-2"
-                    style="text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);"></i><a
-                    href="https://altcheeni.com/shop/">Shop</a></li>
-                <li><i class="fas fa-angle-double-right mr-2"
-                    style="text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);"></i><a
-                    href="https://altcheeni.com/contact/">Contact</a></li>
-                <li><i class="fas fa-angle-double-right mr-2"
-                    style="text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);"></i><a
-                    href="https://altcheeni.com/terms-conditions/">Terms & Conditions</a></li>
-                <li><i class="fas fa-angle-double-right mr-2"
-                    style="text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);"></i><a
-                    href="https://altcheeni.com/returns-refunds-cancellation/">Refunds & Cancellation</a></li>
-              </ul>
-            </div>
-          </div>
+           </div>
+         
+       </div>
 
-          <!-- My Account Column -->
-          <div class="col-md-2 widget widget_text">
-            <h4 class="widget-title" id="myAccountToggle" style="color: whitesmoke;">My Account</h4>
-            <div class="menu-my-account-container mt-4">
-              <ul id="menu-my-account" class="menu">
-                <li><i class="fas fa-angle-double-right mr-2"
-                    style="text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);"></i><a
-                    href="https://altcheeni.com/my-account/">My Account</a></li>
-                <li><i class="fas fa-angle-double-right mr-2"
-                    style="text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);"></i><a rel="privacy-policy"
-                    href="https://altcheeni.com/privacy-policy/">Privacy Policy</a></li>
-                <li><i class="fas fa-angle-double-right mr-2"
-                    style="text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);"></i><a
-                    href="https://altcheeni.com/disclaimer/">Disclaimer</a></li>
-                <li><i class="fas fa-angle-double-right mr-2"
-                    style="text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);"></i><a
-                    href="https://altcheeni.com/terms-of-use/">Terms of Use</a></li>
-                <li><i class="fas fa-angle-double-right mr-2"
-                    style="text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);"></i><a
-                    href="https://altcheeni.com/shipping-policy/">Shipping Policy</a></li>
-                <li><i class="fas fa-angle-double-right mr-2"
-                    style="text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);"></i><a
-                    href="https://altcheeni.com/seller-registration/">Be a Seller</a></li>
-              </ul>
-            </div>
-          </div>
+       <!-- Information Column -->
+       <div class="col-md-2 col-6 widget widget_text mb-5 mb-md-0">
+         <h4 class="widget-title" id="informationToggle">Information</h4>
+         <div class="menu-about-container mt-4">
+           <ul id="menu-about" class="menu" >
+             <li><i class="fas fa-angle-double-right mr-2"
+                 style="text-shadow: 1px 1px 2px rgba(61, 57, 57, 0.8) !important; "></i><a
+                 href="#">Home</a></li>
+             <li><i class="fas fa-angle-double-right mr-2"
+                 style="text-shadow: 1px 1px 2px rgba(61, 57, 57, 0.8) !important; "></i><a
+                 href="#">About Us</a></li>
+             <li><i class="fas fa-angle-double-right mr-2"
+                 style="text-shadow: 1px 1px 2px rgba(61, 57, 57, 0.8) !important; "></i><a
+                 href="#">Shop</a></li>
+             <li><i class="fas fa-angle-double-right mr-2"
+                 style="text-shadow: 1px 1px 2px rgba(61, 57, 57, 0.8) !important; "></i><a
+                 href="#">Contact</a></li>
+             <li><i class="fas fa-angle-double-right mr-2"
+                 style="text-shadow: 1px 1px 2px rgba(61, 57, 57, 0.8) !important; "></i><a
+                 href="#">Terms & Conditions</a></li>
+             <li><i class="fas fa-angle-double-right mr-2"
+                 style="text-shadow: 1px 1px 2px rgba(61, 57, 57, 0.8) !important; "></i><a
+                 href="">Refunds & Cancellation</a></li>
+           </ul>
+         </div>
+       </div>
 
-          <!-- Contact Information Column -->
-          <div class="col-md-3 widget widget_text" style="color: whitesmoke;">
-            <h4 class="widget-title" data-toggle="collapse" data-target="#contactInfo">Contact info.</h4>
-            <div class="sidebar-social-networks address-social-links collapse show" id="contactInfo">
-              <div class="contact-details mt-4">
-                <span><i class="fa fa-map-marker mr-3" style="color: #4DA949;"></i>404/Bandhutva chs
-                  , Data mandir road ,
-                  santacruz (East) Mumbai 400055</span>
-                <br> <span><a href="mailto:info@altcheeni.com"><i class="fa fa-envelope mr-3"
-                      style="color: #4DA949;"></i>info@altcheeni.com</a></span>
-                <br> <span><a href="tel:983 344 5200"><i class="fa fa-phone mr-3" style="color: #4DA949;"></i>983 344
-                    5200</a></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+       <!-- My Account Column -->
+       <div class="col-md-2 col-6 widget widget_text mb-5 mb-md-0">
+         <h4 class="widget-title" id="myAccountToggle">My Account</h4>
+         <div class="menu-my-account-container mt-4">
+           <ul id="menu-my-account" class="menu">
+             <li><i class="fas fa-angle-double-right mr-2"
+                 style="text-shadow: 1px 1px 2px rgba(61, 57, 57, 0.8) !important; "></i></i><a
+                 href="#">My Account</a></li>
+             <li><i class="fas fa-angle-double-right mr-2"
+                 style="text-shadow: 1px 1px 2px rgba(61, 57, 57, 0.8) !important; "></i><a rel="privacy-policy"
+                 href="#">Privacy Policy</a></li>
+             <li><i class="fas fa-angle-double-right mr-2"
+                 style="text-shadow: 1px 1px 2px rgba(61, 57, 57, 0.8) !important; "></i><a
+                 href="#">Disclaimer</a></li>
+             <li><i class="fas fa-angle-double-right mr-2"
+                 style="text-shadow: 1px 1px 2px rgba(61, 57, 57, 0.8) !important; "></i><a
+                 href="#">Terms of Use</a></li>
+             <li><i class="fas fa-angle-double-right mr-2"
+                 style="text-shadow: 1px 1px 2px rgba(61, 57, 57, 0.8) !important; "></i><a
+                 href="#">Shipping Policy</a></li>
+             <li><i class="fas fa-angle-double-right mr-2"
+                 style="text-shadow: 1px 1px 2px rgba(61, 57, 57, 0.8) !important; "></i><a
+                 href="#">Be a Seller</a></li>
+           </ul>
+         </div>
+       </div>
 
-      <div class="footer footer-copyright">
-        <div class="container">
-          <div class="row" style="border-top: 1px solid;">
-            <div class="col-md-6 pt-4">
-              <p class="text-center" style="color: #d2d2d3;">
-                Copyright © 2022 by Altcheeni. All Rights Reserved.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </div>
+       <!-- Contact Information Column -->
+       <div class="col-md-3 col-12 widget widget_text mb-5 mb-md-0" style="color: whitesmoke;">
+         <h4 class="widget-title" data-toggle="collapse" data-target="#contactInfo">Contact info.</h4>
+         <div class="sidebar-social-networks address-social-links collapse show" id="contactInfo">
+           <div class="contact-details mt-4">
+             <p><i class="fa fa-map-marker mr-3" style="color: #4DA949;"></i>404/Bandhutva chs
+               , Data mandir road ,
+               santacruz (East) Mumbai 400055
+             <br> <span><a href="mailto:info@altcheeni.com"><i class="fa fa-envelope mr-3"
+                   style="color: #4DA949;"></i>info@altcheeni.com</a></span>
+             <br> <span><a href="tel:983 344 5200"><i class="fa fa-phone mr-3" style="color: #4DA949;"></i>983 344
+                 5200</a></span>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   <div class="footer footer-copyright">
+     <div class="container">
+       <div class="row" style="border-top: 1px solid;">
+         <div class="col-6 pt-4">
+           <p class="mt-3 " style="color: #d2d2d3;">
+             Copyright © 2022 by Altcheeni. All Rights Reserved.
+           </p>
+         </div>
+         <div class="col-6 pt-4">
+          <div class="sidebar-social-networks">
+             <div id="social_media" class="col-12 d-flex justify-content-center ">
+
+               <a href="https://www.facebook.com/altcheeni"><i class="fab fa-facebook p-3" style="color: #575656;"></i></a>
+               <a href="https://www.instagram.com/altcheeni/"><i class="fab fa-instagram p-3 " style="color: #575656;"></i></a>
+               <a href="https://www.linkedin.com/company/77772178/" target="_blank" rel=""><i class="fab fa-linkedin p-3" style="color: #575656;"></i></i></a>
+             </div>
+             
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </footer>
+
 
   <!-- Bootstrap JS and jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

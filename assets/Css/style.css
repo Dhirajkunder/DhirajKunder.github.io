@@ -22,14 +22,14 @@ body {
 
 .homeTitle{
   font-weight: bolder !important;
-  font-style: italic !important;
   font-family:'Times New Roman', Times, serif !important;
 }
 
 .login-rectangle-modal{
-  display: flex;
-  position:absolute;
-  right: 20%; 
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  right: 20% !important;
 }
 
 .category-rectangle-modal {
@@ -59,27 +59,30 @@ body {
   justify-content: center;
  
 }
-@media (max-width: 768px) {
-  .quick-rectangle-modal {
-    width: 100%;
-    margin-right: 25px !important;
-    margin-top: 25px !important;
+@media (max-width: 900px) {
+  .quick-rectangle-modal, .custom-rectangle-modal, .login-rectangle-modal, .category-rectangle-modal {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 20px !important; /* Add some margin for spacing */
   }
+
   .custom-rectangle-modal {
     height: auto !important;
-    display: auto;
     margin-right: 20px !important;
+  }
 
-}
-.login-rectangle-modal{
-   left: 0!important;
-   right: 0 !important;
-}
-.category-rectangle-modal{
-  margin-right: 25px !important;
+  .login-rectangle-modal {
+    right: 0px !important;
+    padding: 10px !important;
+  }
 
+  .category-rectangle-modal {
+    right: 3px !important;
+    padding: 10px !important;
+  }
 }
-}
+
 
 .text-decoration{
   text-decoration: none !important;
@@ -169,10 +172,7 @@ body {
 
 }
 @media (max-width: 767.98px) {
-  .ftco-navbar-light {
-    background: #ffffff !important;
-    height: auto;
-  }
+ 
 }
 
 .ftco-navbar-light .navbar-nav>.nav-item>.nav-link {
@@ -209,19 +209,14 @@ body {
 }
 
 
-
-@media (max-width: 767.98px) {
-  .ftco-navbar-light .navbar-nav>.nav-item>.nav-link {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  }
-}
-
 .ftco-navbar-light .navbar-nav>.nav-item .dropdown-menu {
   border: none;
   background: #000000;
   color: #000;
   -webkit-box-shadow: 0px 10px 34px -20px rgba(0, 0, 0, 0.41);
   -moz-box-shadow: 0px 10px 34px -20px rgba(0, 0, 0, 0.41);
+
+
   box-shadow: 0px 10px 34px -20px rgba(0, 0, 0, 0.41);
   border-radius: 4px;
 }
@@ -237,47 +232,17 @@ body {
   color: #000000;
 }
 
-@media (max-width: 991.98px) {
-  .ftco-navbar-light .navbar-nav>.nav-item .dropdown-menu {
-    display: block !important;
-    background: #000000;
-  }
-
-  .ftco-navbar-light .navbar-nav>.nav-item .dropdown-menu . {
-    color: rgba(0, 0, 0, 0.8);
-  }
-}
-
 .ftco-navbar-light .navbar-nav>.nav-item.cta>a {
   color: #000000;
   background: #126e00;
   border-radius: 0px;
 }
 
-@media (max-width: 767.98px) {
-  .ftco-navbar-light .navbar-nav>.nav-item.cta>a {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .ftco-navbar-light .navbar-nav>.nav-item.cta>a {
-    color: #000000;
-    background: #126e00;
-    border-radius: 4px;
-  }
-}
 
 .ftco-navbar-light .navbar-nav>.nav-item.active>a {
   color: #126e00;
 }
 
-@media (max-width: 991.98px) {
-  .ftco-navbar-light .navbar-nav>.nav-item.active>a {
-    color: #000;
-  }
-}
 
 .ftco-navbar-light .navbar-toggler {
   border: none;
@@ -384,8 +349,7 @@ body {
 @media (max-width: 991.98px) {
   .dropdown-menu{
     display: none;
-  }
- 
+  } 
 }
 
 .cart-number {
@@ -732,12 +696,21 @@ search
 /* FOOTER CSS */
 
 /* Your custom styles here */
-footer a {
-  color: white;
+#footerCSS a,
+#footerCSS p {
+  color: black !important;
   text-decoration: none !important;
-  /* Set link text color to white */
 }
 
+footer .widget-title{
+  color: rgb(255, 253, 253);
+    background:rgb(92 157 100);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+}
 footer a:hover {
   color: rgb(27, 238, 20);
   /* Set link text color to white */
@@ -1049,7 +1022,7 @@ label.required-field::after {
 
 .hov-img0 {
   display: block;
-  overflow: hidden;
+  overflow:hidden;
 }
 
 .hov-img0 img{
@@ -1066,6 +1039,7 @@ label.required-field::after {
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
   transform: scale(1.1);
+
 }
 
 
@@ -2014,18 +1988,6 @@ animation: spin 0.8s linear infinite;
   transform: translateX(-50%);
 }
 
-.productCard-pic:hover .productCard-btn {
-  bottom: 20px;
-}
-
-.productCard-txt-child1 {
-  width: calc(100% - 30px);
-  text-decoration: none !important;
-}
-
-.productCard-txt-child2 {
-  width: 30px;
-}
 
 
 /* APPLY COUPOUN */

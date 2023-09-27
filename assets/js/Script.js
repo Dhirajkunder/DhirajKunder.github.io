@@ -166,16 +166,16 @@ $(document).ready(function(){
     autoplayHoverPause: true,
     responsive: {
       0: {
-        items: 1
+        items: 3
       },
       576: {
-        items: 2
+        items: 3
       },
       768: {
         items: 3
       },
       992: {
-        items: 4
+        items: 6
       },
       1200: {
         items: 6

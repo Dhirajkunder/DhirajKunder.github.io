@@ -3,27 +3,37 @@
 @media (max-width: 875.98px) {
 
   .owl-carousel .item {
-    height: 200px !important;
-    width:90% !important;
-    margin: 20px !important;
+    width:100% !important;
+    margin-bottom: 20px !important;
+    height: 140px;
+  }
+  
+  .owl-carousel .item h4 {
+    font-size: 15px !important;
   }
   .owl-carousel .item img {
     margin-bottom: 20px !important;
-    width: 100px !important;
-
+    height: 50px;
   }
   #CompanyLogo .owl-carousel .item {
-    margin: 20px !important;
     width:90% !important;
+    margin-left: 5px !important;
+    margin-right: 20px !important;
+    height: 120px !important;
+
+  
   }
   
   #CompanyLogo .owl-carousel .item img {
-    height: 190px !important;
+    height: 120px !important;
+    width:100% !important;
+
+    
   }
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 
   /* HOMEPAGE */
 
@@ -41,6 +51,8 @@
   }
   .nav-pills .nav-link{
     font-size: 10px;
+    padding-left: 0;
+    padding-right: 0;
   }
   
 
@@ -68,6 +80,11 @@
   height: 70px !important;
   
 }
+
+#BestItems .img-thumbnail{
+  height: 300px !important;
+}
+
   
   .logo-image{
     width: 100px;
@@ -85,6 +102,11 @@
   position: relative;
 }
 
+.ftco-navbar-light {
+  background: #ffffff !important;
+  height: auto;
+}
+
 .ftco-navbar-light .navbar-nav>.nav-item>.nav-link {
   padding-left: 0;
   padding-right: 0;
@@ -97,7 +119,33 @@
   color: #020202;
 }
 
+.ftco-navbar-light .navbar-nav>.nav-item>.nav-link {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
 
+.ftco-navbar-light .navbar-nav>.nav-item .dropdown-menu {
+  display: block !important;
+  background: #000000;
+}
+
+.ftco-navbar-light .navbar-nav>.nav-item .dropdown-menu . {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.ftco-navbar-light .navbar-nav>.nav-item.cta>a {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.ftco-navbar-light .navbar-nav>.nav-item.cta>a {
+  color: #000000;
+  background: #126e00;
+  border-radius: 4px;
+}
+
+.ftco-navbar-light .navbar-nav>.nav-item.active>a {
+  color: #000;
+}
 
 .SalesProduct{
     font-size: 10px !important;
@@ -126,16 +174,17 @@
     padding-right: 20px !important;
   }
   .custom-btn {
-    font-size: 12px;
+    font-size: 10px;
     padding-left: 2%;
     padding-right: 0%;
     border-radius: 10%;
   }
   
   .custom-btn1 {
-    font-size: 12px;
+    font-size: 10px;
     padding-left: 2%;
     padding-right: 0%;
+    border-radius: 5px;
   }
   .custom-btn1:hover {
     color: #f58634;
@@ -143,22 +192,30 @@
      border-bottom: 3px solid transparent !important;
     border-top: 3px solid transparent !important;
   }
+  .form-control{
+    font-size: 12px !important;
+  } 
 
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
    #imageCarousel.carousel{
-    height: 200px;
+    height: 250px;
   }
   #imageCarousel img{
-    height: 200px;
+    height: 250px;
   }
 
 
 
+  .cart-number{
+    
+    width: 20px !important;
+    font-size: 12px !important
+  }
   .cart-number1{
-    right: -20px;
+    right: -45px;;
 
   }
   .quickView-btn {
@@ -166,9 +223,9 @@
     transform: translateX(-50%);
     font-weight: bold;
     text-decoration: none !important;
-    height: 25px;
+    height: 20px;
     width: 100% !important;
-    font-size: 10px;
+    font-size: 9px;
 
   }
 .checkbox-label    {
@@ -180,7 +237,7 @@
 
 }
   .single  li a ,h3 {
-        font-size: 8px !important;
+        font-size: 10px !important;
     line-height: 27px !important;
     height: auto;
   }
@@ -192,7 +249,7 @@
     background-color: white;
     font-size: 11px;
     
-    height: 40px !important;
+    height: 50px !important;
   }
   
   .filtertoggle{
@@ -205,5 +262,25 @@
     top: 0;
     z-index: 100; /* Optional: Adjust the z-index to control the stacking order */
   }
-
+  #productDetails  .img-display {
+   height: 300px !important;
+  }
+  #footerCSS .widget-title,
+  #footerCSS a,
+  #footerCSS p{
+ 
+      font-size:12px !important;
+   }
+   footer .footer-logo-image{
+    width: 50%;
+    margin-left: 25%;
+   }
+ #couponModal .row,
+ #couponModal .custom-title{
+  display: flow !important;
+  font-size: 20px !important;
+ }
+ #Checkout h6{
+  font-size: 10px !important;
+ }
 }
