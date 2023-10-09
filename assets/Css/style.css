@@ -88,9 +88,16 @@ body {
   text-decoration: none !important;
 }
 
-.close{
-  outline: none !important;
+.close {
+  position: relative;
+  cursor: pointer !important;
+  width: 23px;
+  height: 23px;
+  background: transparent;
+  border: none;
+  padding: 0;
 }
+
 .close:before, .close:after {
   position: absolute;
   content: ' ';
@@ -98,12 +105,21 @@ body {
   width: 2px;
   background-color: #ff0000;
   font-weight: bolder;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
+
 .close:before {
   transform: rotate(45deg);
 }
+
 .close:after {
   transform: rotate(-45deg);
+}
+
+.close:hover {
+  background:  rgb(255, 61, 61)28, 157, 157)28, 157, 157) !important;
 }
 
 /* BREADCRUMB CSS */
@@ -862,6 +878,10 @@ label.required-field::after {
   text-align: center;
   cursor: pointer;
 }
+
+
+
+
 .qty-number .increment-button:hover,
 .qty-number .decrement-button:hover{
   background: var(--light-grey-color);
@@ -1057,7 +1077,7 @@ label.required-field::after {
   }
    #Shopping .img-showcase img{
   min-width: 100%;
-  padding: 70px;
+  padding: 50px;
   }
    #Shopping .img-select{
   display: flex;
@@ -1087,6 +1107,8 @@ label.required-field::after {
       outline: none !important;
       border-radius: 5px;
     text-align: center !important;
+    border-radius: 20px;
+    filter: drop-shadow(10px,10px,20px) !important;
     }
     .FilterBtn:hover{
       color: wheat;
@@ -1340,8 +1362,8 @@ label.required-field::after {
     outline: none;
     box-shadow: none;
   }
-  .product-count .qtyminus,
-  .product-count .qtyplus {
+  .qtyminus,
+   .qtyplus {
     width: 34px;
       background: #4a73e8;
       text-align: center;
@@ -1350,12 +1372,12 @@ label.required-field::after {
       color: #fff;
       cursor: pointer;
   }
-  .product-count .qtyminus {
+  .qtyminus {
     border-radius: 3px 0 0 3px; 
 
   }
 
-  .product-count .qty {
+  .qty {
     width: 60px;
     text-align: center;
 
