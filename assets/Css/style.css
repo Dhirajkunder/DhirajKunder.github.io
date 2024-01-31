@@ -1107,7 +1107,7 @@ label.required-field::after {
       outline: none !important;
       border-radius: 5px;
     text-align: center !important;
-    border-radius: 20px;
+   
     filter: drop-shadow(10px,10px,20px) !important;
     }
     .FilterBtn:hover{
